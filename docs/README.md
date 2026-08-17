@@ -6,6 +6,7 @@ Ce dossier constitue la référence produit et technique du projet. En cas de di
 
 | Document | Contenu |
 |---|---|
+| [initial-prompt.md](initial-prompt.md) | Archive du prompt initial ayant fondé les spécifications |
 | [product-specification.md](product-specification.md) | Vision, personas, processus, fonctions et UX |
 | [architecture.md](architecture.md) | Options d'architecture, recommandation et modèle de données |
 | [sap-integration.md](sap-integration.md) | Mapping SAP, Clean Core et stratégie connecteurs |
