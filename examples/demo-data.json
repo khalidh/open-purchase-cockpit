@@ -1,0 +1,4922 @@
+{
+  "meta": {
+    "schemaVersion": "1.0.0",
+    "businessDate": "2026-08-17",
+    "generated": true,
+    "sourceSystem": "MOCK-S4",
+    "description": "Données entièrement fictives pour Open Purchase Cockpit"
+  },
+  "suppliers": [
+    {
+      "id": "SUP-001",
+      "name": "Alpine Components",
+      "country": "FR",
+      "purchasingOrganizations": [
+        "1000"
+      ],
+      "category": "MECHANICAL"
+    },
+    {
+      "id": "SUP-002",
+      "name": "Baltic Office",
+      "country": "DE",
+      "purchasingOrganizations": [
+        "2000"
+      ],
+      "category": "OFFICE"
+    },
+    {
+      "id": "SUP-003",
+      "name": "Cobalt Tools",
+      "country": "BE",
+      "purchasingOrganizations": [
+        "1000"
+      ],
+      "category": "TOOLS"
+    },
+    {
+      "id": "SUP-004",
+      "name": "Delta Packaging",
+      "country": "NL",
+      "purchasingOrganizations": [
+        "2000"
+      ],
+      "category": "PACKAGING"
+    },
+    {
+      "id": "SUP-005",
+      "name": "Europa Safety",
+      "country": "ES",
+      "purchasingOrganizations": [
+        "1000"
+      ],
+      "category": "SAFETY"
+    },
+    {
+      "id": "SUP-006",
+      "name": "Fjord Bearings",
+      "country": "SE",
+      "purchasingOrganizations": [
+        "2000"
+      ],
+      "category": "MECHANICAL"
+    },
+    {
+      "id": "SUP-007",
+      "name": "Gaia Electronics",
+      "country": "IT",
+      "purchasingOrganizations": [
+        "1000"
+      ],
+      "category": "OFFICE"
+    },
+    {
+      "id": "SUP-008",
+      "name": "Helios Services",
+      "country": "IE",
+      "purchasingOrganizations": [
+        "2000"
+      ],
+      "category": "TOOLS"
+    },
+    {
+      "id": "SUP-009",
+      "name": "Ion Chemicals",
+      "country": "AT",
+      "purchasingOrganizations": [
+        "1000"
+      ],
+      "category": "PACKAGING"
+    },
+    {
+      "id": "SUP-010",
+      "name": "Jade Logistics",
+      "country": "PL",
+      "purchasingOrganizations": [
+        "2000"
+      ],
+      "category": "SAFETY"
+    }
+  ],
+  "materials": [
+    {
+      "id": "MAT-0001",
+      "description": "Article de démonstration 01",
+      "category": "MECHANICAL",
+      "baseUnit": "KG",
+      "plant": "P100"
+    },
+    {
+      "id": "MAT-0002",
+      "description": "Article de démonstration 02",
+      "category": "OFFICE",
+      "baseUnit": "EA",
+      "plant": "P200"
+    },
+    {
+      "id": "MAT-0003",
+      "description": "Article de démonstration 03",
+      "category": "TOOLS",
+      "baseUnit": "EA",
+      "plant": "P100"
+    },
+    {
+      "id": "MAT-0004",
+      "description": "Article de démonstration 04",
+      "category": "PACKAGING",
+      "baseUnit": "EA",
+      "plant": "P200"
+    },
+    {
+      "id": "MAT-0005",
+      "description": "Article de démonstration 05",
+      "category": "SAFETY",
+      "baseUnit": "KG",
+      "plant": "P100"
+    },
+    {
+      "id": "MAT-0006",
+      "description": "Article de démonstration 06",
+      "category": "MECHANICAL",
+      "baseUnit": "EA",
+      "plant": "P200"
+    },
+    {
+      "id": "MAT-0007",
+      "description": "Article de démonstration 07",
+      "category": "OFFICE",
+      "baseUnit": "EA",
+      "plant": "P100"
+    },
+    {
+      "id": "MAT-0008",
+      "description": "Article de démonstration 08",
+      "category": "TOOLS",
+      "baseUnit": "EA",
+      "plant": "P200"
+    },
+    {
+      "id": "MAT-0009",
+      "description": "Article de démonstration 09",
+      "category": "PACKAGING",
+      "baseUnit": "KG",
+      "plant": "P100"
+    },
+    {
+      "id": "MAT-0010",
+      "description": "Article de démonstration 10",
+      "category": "SAFETY",
+      "baseUnit": "EA",
+      "plant": "P200"
+    },
+    {
+      "id": "MAT-0011",
+      "description": "Article de démonstration 11",
+      "category": "MECHANICAL",
+      "baseUnit": "EA",
+      "plant": "P100"
+    },
+    {
+      "id": "MAT-0012",
+      "description": "Article de démonstration 12",
+      "category": "OFFICE",
+      "baseUnit": "EA",
+      "plant": "P200"
+    },
+    {
+      "id": "MAT-0013",
+      "description": "Article de démonstration 13",
+      "category": "TOOLS",
+      "baseUnit": "KG",
+      "plant": "P100"
+    },
+    {
+      "id": "MAT-0014",
+      "description": "Article de démonstration 14",
+      "category": "PACKAGING",
+      "baseUnit": "EA",
+      "plant": "P200"
+    },
+    {
+      "id": "MAT-0015",
+      "description": "Article de démonstration 15",
+      "category": "SAFETY",
+      "baseUnit": "EA",
+      "plant": "P100"
+    },
+    {
+      "id": "MAT-0016",
+      "description": "Article de démonstration 16",
+      "category": "MECHANICAL",
+      "baseUnit": "EA",
+      "plant": "P200"
+    },
+    {
+      "id": "MAT-0017",
+      "description": "Article de démonstration 17",
+      "category": "OFFICE",
+      "baseUnit": "KG",
+      "plant": "P100"
+    },
+    {
+      "id": "MAT-0018",
+      "description": "Article de démonstration 18",
+      "category": "TOOLS",
+      "baseUnit": "EA",
+      "plant": "P200"
+    },
+    {
+      "id": "MAT-0019",
+      "description": "Article de démonstration 19",
+      "category": "PACKAGING",
+      "baseUnit": "EA",
+      "plant": "P100"
+    },
+    {
+      "id": "MAT-0020",
+      "description": "Article de démonstration 20",
+      "category": "SAFETY",
+      "baseUnit": "EA",
+      "plant": "P200"
+    },
+    {
+      "id": "MAT-0021",
+      "description": "Article de démonstration 21",
+      "category": "MECHANICAL",
+      "baseUnit": "KG",
+      "plant": "P100"
+    },
+    {
+      "id": "MAT-0022",
+      "description": "Article de démonstration 22",
+      "category": "OFFICE",
+      "baseUnit": "EA",
+      "plant": "P200"
+    },
+    {
+      "id": "MAT-0023",
+      "description": "Article de démonstration 23",
+      "category": "TOOLS",
+      "baseUnit": "EA",
+      "plant": "P100"
+    },
+    {
+      "id": "MAT-0024",
+      "description": "Article de démonstration 24",
+      "category": "PACKAGING",
+      "baseUnit": "EA",
+      "plant": "P200"
+    },
+    {
+      "id": "MAT-0025",
+      "description": "Article de démonstration 25",
+      "category": "SAFETY",
+      "baseUnit": "KG",
+      "plant": "P100"
+    },
+    {
+      "id": "MAT-0026",
+      "description": "Article de démonstration 26",
+      "category": "MECHANICAL",
+      "baseUnit": "EA",
+      "plant": "P200"
+    },
+    {
+      "id": "MAT-0027",
+      "description": "Article de démonstration 27",
+      "category": "OFFICE",
+      "baseUnit": "EA",
+      "plant": "P100"
+    },
+    {
+      "id": "MAT-0028",
+      "description": "Article de démonstration 28",
+      "category": "TOOLS",
+      "baseUnit": "EA",
+      "plant": "P200"
+    },
+    {
+      "id": "MAT-0029",
+      "description": "Article de démonstration 29",
+      "category": "PACKAGING",
+      "baseUnit": "KG",
+      "plant": "P100"
+    },
+    {
+      "id": "MAT-0030",
+      "description": "Article de démonstration 30",
+      "category": "SAFETY",
+      "baseUnit": "EA",
+      "plant": "P200"
+    }
+  ],
+  "purchaseRequisitions": [
+    {
+      "id": "1000000001",
+      "itemNo": "00010",
+      "materialId": "MAT-0001",
+      "requestedQuantity": 10,
+      "unit": "KG",
+      "requestedDate": "2026-08-20",
+      "requester": "REQUESTER-1",
+      "companyCode": "1000",
+      "purchasingGroup": "G10",
+      "approvalStatus": "PENDING",
+      "purchaseOrderRefs": []
+    },
+    {
+      "id": "1000000002",
+      "itemNo": "00010",
+      "materialId": "MAT-0002",
+      "requestedQuantity": 15,
+      "unit": "EA",
+      "requestedDate": "2026-08-21",
+      "requester": "REQUESTER-2",
+      "companyCode": "2000",
+      "purchasingGroup": "G20",
+      "approvalStatus": "APPROVED",
+      "purchaseOrderRefs": [
+        "4500000002"
+      ]
+    },
+    {
+      "id": "1000000003",
+      "itemNo": "00010",
+      "materialId": "MAT-0003",
+      "requestedQuantity": 20,
+      "unit": "EA",
+      "requestedDate": "2026-08-22",
+      "requester": "REQUESTER-3",
+      "companyCode": "1000",
+      "purchasingGroup": "G30",
+      "approvalStatus": "APPROVED",
+      "purchaseOrderRefs": [
+        "4500000003"
+      ]
+    },
+    {
+      "id": "1000000004",
+      "itemNo": "00010",
+      "materialId": "MAT-0004",
+      "requestedQuantity": 25,
+      "unit": "EA",
+      "requestedDate": "2026-08-23",
+      "requester": "REQUESTER-4",
+      "companyCode": "2000",
+      "purchasingGroup": "G40",
+      "approvalStatus": "APPROVED",
+      "purchaseOrderRefs": [
+        "4500000004"
+      ]
+    },
+    {
+      "id": "1000000005",
+      "itemNo": "00010",
+      "materialId": "MAT-0005",
+      "requestedQuantity": 30,
+      "unit": "KG",
+      "requestedDate": "2026-08-24",
+      "requester": "REQUESTER-5",
+      "companyCode": "1000",
+      "purchasingGroup": "G10",
+      "approvalStatus": "APPROVED",
+      "purchaseOrderRefs": []
+    },
+    {
+      "id": "1000000006",
+      "itemNo": "00010",
+      "materialId": "MAT-0006",
+      "requestedQuantity": 35,
+      "unit": "EA",
+      "requestedDate": "2026-08-25",
+      "requester": "REQUESTER-1",
+      "companyCode": "2000",
+      "purchasingGroup": "G20",
+      "approvalStatus": "APPROVED",
+      "purchaseOrderRefs": [
+        "4500000006"
+      ]
+    },
+    {
+      "id": "1000000007",
+      "itemNo": "00010",
+      "materialId": "MAT-0007",
+      "requestedQuantity": 40,
+      "unit": "EA",
+      "requestedDate": "2026-08-26",
+      "requester": "REQUESTER-2",
+      "companyCode": "1000",
+      "purchasingGroup": "G30",
+      "approvalStatus": "PENDING",
+      "purchaseOrderRefs": [
+        "4500000007"
+      ]
+    },
+    {
+      "id": "1000000008",
+      "itemNo": "00010",
+      "materialId": "MAT-0008",
+      "requestedQuantity": 45,
+      "unit": "EA",
+      "requestedDate": "2026-08-27",
+      "requester": "REQUESTER-3",
+      "companyCode": "2000",
+      "purchasingGroup": "G40",
+      "approvalStatus": "APPROVED",
+      "purchaseOrderRefs": [
+        "4500000008"
+      ]
+    },
+    {
+      "id": "1000000009",
+      "itemNo": "00010",
+      "materialId": "MAT-0009",
+      "requestedQuantity": 10,
+      "unit": "KG",
+      "requestedDate": "2026-08-28",
+      "requester": "REQUESTER-4",
+      "companyCode": "1000",
+      "purchasingGroup": "G10",
+      "approvalStatus": "APPROVED",
+      "purchaseOrderRefs": []
+    },
+    {
+      "id": "1000000010",
+      "itemNo": "00010",
+      "materialId": "MAT-0010",
+      "requestedQuantity": 15,
+      "unit": "EA",
+      "requestedDate": "2026-08-29",
+      "requester": "REQUESTER-5",
+      "companyCode": "2000",
+      "purchasingGroup": "G20",
+      "approvalStatus": "APPROVED",
+      "purchaseOrderRefs": [
+        "4500000010"
+      ]
+    },
+    {
+      "id": "1000000011",
+      "itemNo": "00010",
+      "materialId": "MAT-0011",
+      "requestedQuantity": 20,
+      "unit": "EA",
+      "requestedDate": "2026-08-30",
+      "requester": "REQUESTER-1",
+      "companyCode": "1000",
+      "purchasingGroup": "G30",
+      "approvalStatus": "APPROVED",
+      "purchaseOrderRefs": [
+        "4500000011"
+      ]
+    },
+    {
+      "id": "1000000012",
+      "itemNo": "00010",
+      "materialId": "MAT-0012",
+      "requestedQuantity": 25,
+      "unit": "EA",
+      "requestedDate": "2026-08-31",
+      "requester": "REQUESTER-2",
+      "companyCode": "2000",
+      "purchasingGroup": "G40",
+      "approvalStatus": "APPROVED",
+      "purchaseOrderRefs": [
+        "4500000012"
+      ]
+    },
+    {
+      "id": "1000000013",
+      "itemNo": "00010",
+      "materialId": "MAT-0013",
+      "requestedQuantity": 30,
+      "unit": "KG",
+      "requestedDate": "2026-09-01",
+      "requester": "REQUESTER-3",
+      "companyCode": "1000",
+      "purchasingGroup": "G10",
+      "approvalStatus": "PENDING",
+      "purchaseOrderRefs": []
+    },
+    {
+      "id": "1000000014",
+      "itemNo": "00010",
+      "materialId": "MAT-0014",
+      "requestedQuantity": 35,
+      "unit": "EA",
+      "requestedDate": "2026-09-02",
+      "requester": "REQUESTER-4",
+      "companyCode": "2000",
+      "purchasingGroup": "G20",
+      "approvalStatus": "APPROVED",
+      "purchaseOrderRefs": [
+        "4500000014"
+      ]
+    },
+    {
+      "id": "1000000015",
+      "itemNo": "00010",
+      "materialId": "MAT-0015",
+      "requestedQuantity": 40,
+      "unit": "EA",
+      "requestedDate": "2026-09-03",
+      "requester": "REQUESTER-5",
+      "companyCode": "1000",
+      "purchasingGroup": "G30",
+      "approvalStatus": "APPROVED",
+      "purchaseOrderRefs": [
+        "4500000015"
+      ]
+    },
+    {
+      "id": "1000000016",
+      "itemNo": "00010",
+      "materialId": "MAT-0016",
+      "requestedQuantity": 45,
+      "unit": "EA",
+      "requestedDate": "2026-09-04",
+      "requester": "REQUESTER-1",
+      "companyCode": "2000",
+      "purchasingGroup": "G40",
+      "approvalStatus": "APPROVED",
+      "purchaseOrderRefs": [
+        "4500000016"
+      ]
+    },
+    {
+      "id": "1000000017",
+      "itemNo": "00010",
+      "materialId": "MAT-0017",
+      "requestedQuantity": 10,
+      "unit": "KG",
+      "requestedDate": "2026-09-05",
+      "requester": "REQUESTER-2",
+      "companyCode": "1000",
+      "purchasingGroup": "G10",
+      "approvalStatus": "APPROVED",
+      "purchaseOrderRefs": []
+    },
+    {
+      "id": "1000000018",
+      "itemNo": "00010",
+      "materialId": "MAT-0018",
+      "requestedQuantity": 15,
+      "unit": "EA",
+      "requestedDate": "2026-09-06",
+      "requester": "REQUESTER-3",
+      "companyCode": "2000",
+      "purchasingGroup": "G20",
+      "approvalStatus": "APPROVED",
+      "purchaseOrderRefs": [
+        "4500000018"
+      ]
+    },
+    {
+      "id": "1000000019",
+      "itemNo": "00010",
+      "materialId": "MAT-0019",
+      "requestedQuantity": 20,
+      "unit": "EA",
+      "requestedDate": "2026-09-07",
+      "requester": "REQUESTER-4",
+      "companyCode": "1000",
+      "purchasingGroup": "G30",
+      "approvalStatus": "PENDING",
+      "purchaseOrderRefs": [
+        "4500000019"
+      ]
+    },
+    {
+      "id": "1000000020",
+      "itemNo": "00010",
+      "materialId": "MAT-0020",
+      "requestedQuantity": 25,
+      "unit": "EA",
+      "requestedDate": "2026-09-08",
+      "requester": "REQUESTER-5",
+      "companyCode": "2000",
+      "purchasingGroup": "G40",
+      "approvalStatus": "APPROVED",
+      "purchaseOrderRefs": [
+        "4500000020"
+      ]
+    },
+    {
+      "id": "1000000021",
+      "itemNo": "00010",
+      "materialId": "MAT-0021",
+      "requestedQuantity": 30,
+      "unit": "KG",
+      "requestedDate": "2026-08-20",
+      "requester": "REQUESTER-1",
+      "companyCode": "1000",
+      "purchasingGroup": "G10",
+      "approvalStatus": "APPROVED",
+      "purchaseOrderRefs": []
+    },
+    {
+      "id": "1000000022",
+      "itemNo": "00010",
+      "materialId": "MAT-0022",
+      "requestedQuantity": 35,
+      "unit": "EA",
+      "requestedDate": "2026-08-21",
+      "requester": "REQUESTER-2",
+      "companyCode": "2000",
+      "purchasingGroup": "G20",
+      "approvalStatus": "APPROVED",
+      "purchaseOrderRefs": [
+        "4500000022"
+      ]
+    },
+    {
+      "id": "1000000023",
+      "itemNo": "00010",
+      "materialId": "MAT-0023",
+      "requestedQuantity": 40,
+      "unit": "EA",
+      "requestedDate": "2026-08-22",
+      "requester": "REQUESTER-3",
+      "companyCode": "1000",
+      "purchasingGroup": "G30",
+      "approvalStatus": "APPROVED",
+      "purchaseOrderRefs": [
+        "4500000023"
+      ]
+    },
+    {
+      "id": "1000000024",
+      "itemNo": "00010",
+      "materialId": "MAT-0024",
+      "requestedQuantity": 45,
+      "unit": "EA",
+      "requestedDate": "2026-08-23",
+      "requester": "REQUESTER-4",
+      "companyCode": "2000",
+      "purchasingGroup": "G40",
+      "approvalStatus": "APPROVED",
+      "purchaseOrderRefs": [
+        "4500000024"
+      ]
+    },
+    {
+      "id": "1000000025",
+      "itemNo": "00010",
+      "materialId": "MAT-0025",
+      "requestedQuantity": 10,
+      "unit": "KG",
+      "requestedDate": "2026-08-24",
+      "requester": "REQUESTER-5",
+      "companyCode": "1000",
+      "purchasingGroup": "G10",
+      "approvalStatus": "PENDING",
+      "purchaseOrderRefs": []
+    }
+  ],
+  "purchaseOrders": [
+    {
+      "id": "4500000001",
+      "supplierId": "SUP-001",
+      "companyCode": "1000",
+      "purchasingOrganization": "1000",
+      "purchasingGroup": "G10",
+      "orderDate": "2026-06-18",
+      "currency": "EUR",
+      "netValue": 1030,
+      "status": "DELIVERED",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0001",
+          "description": "Article de démonstration 01",
+          "category": "MECHANICAL",
+          "plant": "P100",
+          "orderedQuantity": 30,
+          "receivedQuantity": 30,
+          "remainingQuantity": 0,
+          "unit": "KG",
+          "netPrice": 13,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-22",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0002",
+          "description": "Article de démonstration 02",
+          "category": "OFFICE",
+          "plant": "P200",
+          "orderedQuantity": 40,
+          "receivedQuantity": 40,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 16,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-22",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000002",
+      "supplierId": "SUP-002",
+      "companyCode": "2000",
+      "purchasingOrganization": "2000",
+      "purchasingGroup": "G20",
+      "orderDate": "2026-06-19",
+      "currency": "EUR",
+      "netValue": 1950,
+      "status": "DELIVERED",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0003",
+          "description": "Article de démonstration 03",
+          "category": "TOOLS",
+          "plant": "P100",
+          "orderedQuantity": 40,
+          "receivedQuantity": 40,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 20,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-23",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0004",
+          "description": "Article de démonstration 04",
+          "category": "PACKAGING",
+          "plant": "P200",
+          "orderedQuantity": 50,
+          "receivedQuantity": 50,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 23,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-23",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000003",
+      "supplierId": "SUP-003",
+      "companyCode": "1000",
+      "purchasingOrganization": "1000",
+      "purchasingGroup": "G30",
+      "orderDate": "2026-06-20",
+      "currency": "EUR",
+      "netValue": 3150,
+      "status": "DELIVERED",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0005",
+          "description": "Article de démonstration 05",
+          "category": "SAFETY",
+          "plant": "P100",
+          "orderedQuantity": 50,
+          "receivedQuantity": 50,
+          "remainingQuantity": 0,
+          "unit": "KG",
+          "netPrice": 27,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-24",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0006",
+          "description": "Article de démonstration 06",
+          "category": "MECHANICAL",
+          "plant": "P200",
+          "orderedQuantity": 60,
+          "receivedQuantity": 60,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 30,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-24",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000004",
+      "supplierId": "SUP-004",
+      "companyCode": "2000",
+      "purchasingOrganization": "2000",
+      "purchasingGroup": "G40",
+      "orderDate": "2026-06-21",
+      "currency": "EUR",
+      "netValue": 4630,
+      "status": "DELIVERED",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0007",
+          "description": "Article de démonstration 07",
+          "category": "OFFICE",
+          "plant": "P100",
+          "orderedQuantity": 60,
+          "receivedQuantity": 60,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 34,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-25",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0008",
+          "description": "Article de démonstration 08",
+          "category": "TOOLS",
+          "plant": "P200",
+          "orderedQuantity": 70,
+          "receivedQuantity": 70,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 37,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-25",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000005",
+      "supplierId": "SUP-005",
+      "companyCode": "1000",
+      "purchasingOrganization": "1000",
+      "purchasingGroup": "G10",
+      "orderDate": "2026-06-22",
+      "currency": "EUR",
+      "netValue": 6390,
+      "status": "LATE",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0009",
+          "description": "Article de démonstration 09",
+          "category": "PACKAGING",
+          "plant": "P100",
+          "orderedQuantity": 70,
+          "receivedQuantity": 35,
+          "remainingQuantity": 35,
+          "unit": "KG",
+          "netPrice": 41,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-03",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0010",
+          "description": "Article de démonstration 10",
+          "category": "SAFETY",
+          "plant": "P200",
+          "orderedQuantity": 80,
+          "receivedQuantity": 40,
+          "remainingQuantity": 40,
+          "unit": "EA",
+          "netPrice": 44,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-03",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000006",
+      "supplierId": "SUP-006",
+      "companyCode": "2000",
+      "purchasingOrganization": "2000",
+      "purchasingGroup": "G20",
+      "orderDate": "2026-06-23",
+      "currency": "EUR",
+      "netValue": 8430,
+      "status": "DELIVERED",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0011",
+          "description": "Article de démonstration 11",
+          "category": "MECHANICAL",
+          "plant": "P100",
+          "orderedQuantity": 80,
+          "receivedQuantity": 80,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 48,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-19",
+          "confirmationStatus": "MISSING"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0012",
+          "description": "Article de démonstration 12",
+          "category": "OFFICE",
+          "plant": "P200",
+          "orderedQuantity": 90,
+          "receivedQuantity": 90,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 51,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-19",
+          "confirmationStatus": "MISSING"
+        }
+      ]
+    },
+    {
+      "id": "4500000007",
+      "supplierId": "SUP-007",
+      "companyCode": "1000",
+      "purchasingOrganization": "1000",
+      "purchasingGroup": "G30",
+      "orderDate": "2026-06-24",
+      "currency": "EUR",
+      "netValue": 10750,
+      "status": "PARTIAL",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0013",
+          "description": "Article de démonstration 13",
+          "category": "TOOLS",
+          "plant": "P100",
+          "orderedQuantity": 90,
+          "receivedQuantity": 45,
+          "remainingQuantity": 45,
+          "unit": "KG",
+          "netPrice": 55,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-28",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0014",
+          "description": "Article de démonstration 14",
+          "category": "PACKAGING",
+          "plant": "P200",
+          "orderedQuantity": 100,
+          "receivedQuantity": 50,
+          "remainingQuantity": 50,
+          "unit": "EA",
+          "netPrice": 58,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-28",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000008",
+      "supplierId": "SUP-008",
+      "companyCode": "2000",
+      "purchasingOrganization": "2000",
+      "purchasingGroup": "G40",
+      "orderDate": "2026-06-25",
+      "currency": "EUR",
+      "netValue": 7500,
+      "status": "DELIVERED",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0015",
+          "description": "Article de démonstration 15",
+          "category": "SAFETY",
+          "plant": "P100",
+          "orderedQuantity": 100,
+          "receivedQuantity": 100,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 62,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-29",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0016",
+          "description": "Article de démonstration 16",
+          "category": "MECHANICAL",
+          "plant": "P200",
+          "orderedQuantity": 20,
+          "receivedQuantity": 20,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 65,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-29",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000009",
+      "supplierId": "SUP-009",
+      "companyCode": "1000",
+      "purchasingOrganization": "1000",
+      "purchasingGroup": "G10",
+      "orderDate": "2026-06-26",
+      "currency": "EUR",
+      "netValue": 3540,
+      "status": "OPEN",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0017",
+          "description": "Article de démonstration 17",
+          "category": "OFFICE",
+          "plant": "P100",
+          "orderedQuantity": 20,
+          "receivedQuantity": 0,
+          "remainingQuantity": 20,
+          "unit": "KG",
+          "netPrice": 69,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-30",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0018",
+          "description": "Article de démonstration 18",
+          "category": "TOOLS",
+          "plant": "P200",
+          "orderedQuantity": 30,
+          "receivedQuantity": 0,
+          "remainingQuantity": 30,
+          "unit": "EA",
+          "netPrice": 72,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-30",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000010",
+      "supplierId": "SUP-010",
+      "companyCode": "2000",
+      "purchasingOrganization": "2000",
+      "purchasingGroup": "G20",
+      "orderDate": "2026-06-27",
+      "currency": "EUR",
+      "netValue": 5440,
+      "status": "LATE",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0019",
+          "description": "Article de démonstration 19",
+          "category": "PACKAGING",
+          "plant": "P100",
+          "orderedQuantity": 30,
+          "receivedQuantity": 15,
+          "remainingQuantity": 15,
+          "unit": "EA",
+          "netPrice": 76,
+          "priceUnit": 1,
+          "deliveryDate": "2026-07-29",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0020",
+          "description": "Article de démonstration 20",
+          "category": "SAFETY",
+          "plant": "P200",
+          "orderedQuantity": 40,
+          "receivedQuantity": 20,
+          "remainingQuantity": 20,
+          "unit": "EA",
+          "netPrice": 79,
+          "priceUnit": 1,
+          "deliveryDate": "2026-07-29",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000011",
+      "supplierId": "SUP-001",
+      "companyCode": "1000",
+      "purchasingOrganization": "1000",
+      "purchasingGroup": "G30",
+      "orderDate": "2026-06-28",
+      "currency": "EUR",
+      "netValue": 7620,
+      "status": "DELIVERED",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0021",
+          "description": "Article de démonstration 21",
+          "category": "MECHANICAL",
+          "plant": "P100",
+          "orderedQuantity": 40,
+          "receivedQuantity": 40,
+          "remainingQuantity": 0,
+          "unit": "KG",
+          "netPrice": 83,
+          "priceUnit": 1,
+          "deliveryDate": "2026-09-01",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0022",
+          "description": "Article de démonstration 22",
+          "category": "OFFICE",
+          "plant": "P200",
+          "orderedQuantity": 50,
+          "receivedQuantity": 50,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 86,
+          "priceUnit": 1,
+          "deliveryDate": "2026-09-01",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000012",
+      "supplierId": "SUP-002",
+      "companyCode": "2000",
+      "purchasingOrganization": "2000",
+      "purchasingGroup": "G40",
+      "orderDate": "2026-06-29",
+      "currency": "EUR",
+      "netValue": 10080,
+      "status": "DELIVERED",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0023",
+          "description": "Article de démonstration 23",
+          "category": "TOOLS",
+          "plant": "P100",
+          "orderedQuantity": 50,
+          "receivedQuantity": 50,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 90,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-19",
+          "confirmationStatus": "MISSING"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0024",
+          "description": "Article de démonstration 24",
+          "category": "PACKAGING",
+          "plant": "P200",
+          "orderedQuantity": 60,
+          "receivedQuantity": 60,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 93,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-19",
+          "confirmationStatus": "MISSING"
+        }
+      ]
+    },
+    {
+      "id": "4500000013",
+      "supplierId": "SUP-003",
+      "companyCode": "1000",
+      "purchasingOrganization": "1000",
+      "purchasingGroup": "G10",
+      "orderDate": "2026-06-30",
+      "currency": "EUR",
+      "netValue": 6520,
+      "status": "DELIVERED",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0025",
+          "description": "Article de démonstration 25",
+          "category": "SAFETY",
+          "plant": "P100",
+          "orderedQuantity": 60,
+          "receivedQuantity": 60,
+          "remainingQuantity": 0,
+          "unit": "KG",
+          "netPrice": 97,
+          "priceUnit": 1,
+          "deliveryDate": "2026-09-03",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0026",
+          "description": "Article de démonstration 26",
+          "category": "MECHANICAL",
+          "plant": "P200",
+          "orderedQuantity": 70,
+          "receivedQuantity": 70,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 10,
+          "priceUnit": 1,
+          "deliveryDate": "2026-09-03",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000014",
+      "supplierId": "SUP-004",
+      "companyCode": "2000",
+      "purchasingOrganization": "2000",
+      "purchasingGroup": "G20",
+      "orderDate": "2026-07-01",
+      "currency": "EUR",
+      "netValue": 2340,
+      "status": "PARTIAL",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0027",
+          "description": "Article de démonstration 27",
+          "category": "OFFICE",
+          "plant": "P100",
+          "orderedQuantity": 70,
+          "receivedQuantity": 35,
+          "remainingQuantity": 35,
+          "unit": "EA",
+          "netPrice": 14,
+          "priceUnit": 1,
+          "deliveryDate": "2026-09-04",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0028",
+          "description": "Article de démonstration 28",
+          "category": "TOOLS",
+          "plant": "P200",
+          "orderedQuantity": 80,
+          "receivedQuantity": 40,
+          "remainingQuantity": 40,
+          "unit": "EA",
+          "netPrice": 17,
+          "priceUnit": 1,
+          "deliveryDate": "2026-09-04",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000015",
+      "supplierId": "SUP-005",
+      "companyCode": "1000",
+      "purchasingOrganization": "1000",
+      "purchasingGroup": "G30",
+      "orderDate": "2026-07-02",
+      "currency": "EUR",
+      "netValue": 3840,
+      "status": "LATE",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0029",
+          "description": "Article de démonstration 29",
+          "category": "PACKAGING",
+          "plant": "P100",
+          "orderedQuantity": 80,
+          "receivedQuantity": 40,
+          "remainingQuantity": 40,
+          "unit": "KG",
+          "netPrice": 21,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-03",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0030",
+          "description": "Article de démonstration 30",
+          "category": "SAFETY",
+          "plant": "P200",
+          "orderedQuantity": 90,
+          "receivedQuantity": 45,
+          "remainingQuantity": 45,
+          "unit": "EA",
+          "netPrice": 24,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-03",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000016",
+      "supplierId": "SUP-006",
+      "companyCode": "2000",
+      "purchasingOrganization": "2000",
+      "purchasingGroup": "G40",
+      "orderDate": "2026-07-03",
+      "currency": "EUR",
+      "netValue": 5620,
+      "status": "DELIVERED",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0001",
+          "description": "Article de démonstration 01",
+          "category": "MECHANICAL",
+          "plant": "P100",
+          "orderedQuantity": 90,
+          "receivedQuantity": 90,
+          "remainingQuantity": 0,
+          "unit": "KG",
+          "netPrice": 28,
+          "priceUnit": 1,
+          "deliveryDate": "2026-09-06",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0002",
+          "description": "Article de démonstration 02",
+          "category": "OFFICE",
+          "plant": "P200",
+          "orderedQuantity": 100,
+          "receivedQuantity": 100,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 31,
+          "priceUnit": 1,
+          "deliveryDate": "2026-09-06",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000017",
+      "supplierId": "SUP-007",
+      "companyCode": "1000",
+      "purchasingOrganization": "1000",
+      "purchasingGroup": "G10",
+      "orderDate": "2026-07-04",
+      "currency": "EUR",
+      "netValue": 4260,
+      "status": "DELIVERED",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0003",
+          "description": "Article de démonstration 03",
+          "category": "TOOLS",
+          "plant": "P100",
+          "orderedQuantity": 100,
+          "receivedQuantity": 100,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 35,
+          "priceUnit": 1,
+          "deliveryDate": "2026-09-07",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0004",
+          "description": "Article de démonstration 04",
+          "category": "PACKAGING",
+          "plant": "P200",
+          "orderedQuantity": 20,
+          "receivedQuantity": 20,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 38,
+          "priceUnit": 1,
+          "deliveryDate": "2026-09-07",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000018",
+      "supplierId": "SUP-008",
+      "companyCode": "2000",
+      "purchasingOrganization": "2000",
+      "purchasingGroup": "G20",
+      "orderDate": "2026-07-05",
+      "currency": "EUR",
+      "netValue": 2190,
+      "status": "OPEN",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0005",
+          "description": "Article de démonstration 05",
+          "category": "SAFETY",
+          "plant": "P100",
+          "orderedQuantity": 20,
+          "receivedQuantity": 0,
+          "remainingQuantity": 20,
+          "unit": "KG",
+          "netPrice": 42,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-19",
+          "confirmationStatus": "MISSING"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0006",
+          "description": "Article de démonstration 06",
+          "category": "MECHANICAL",
+          "plant": "P200",
+          "orderedQuantity": 30,
+          "receivedQuantity": 0,
+          "remainingQuantity": 30,
+          "unit": "EA",
+          "netPrice": 45,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-19",
+          "confirmationStatus": "MISSING"
+        }
+      ]
+    },
+    {
+      "id": "4500000019",
+      "supplierId": "SUP-009",
+      "companyCode": "1000",
+      "purchasingOrganization": "1000",
+      "purchasingGroup": "G30",
+      "orderDate": "2026-07-06",
+      "currency": "EUR",
+      "netValue": 3550,
+      "status": "DELIVERED",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0007",
+          "description": "Article de démonstration 07",
+          "category": "OFFICE",
+          "plant": "P100",
+          "orderedQuantity": 30,
+          "receivedQuantity": 30,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 49,
+          "priceUnit": 1,
+          "deliveryDate": "2026-09-09",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0008",
+          "description": "Article de démonstration 08",
+          "category": "TOOLS",
+          "plant": "P200",
+          "orderedQuantity": 40,
+          "receivedQuantity": 40,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 52,
+          "priceUnit": 1,
+          "deliveryDate": "2026-09-09",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000020",
+      "supplierId": "SUP-010",
+      "companyCode": "2000",
+      "purchasingOrganization": "2000",
+      "purchasingGroup": "G40",
+      "orderDate": "2026-07-07",
+      "currency": "EUR",
+      "netValue": 5190,
+      "status": "LATE",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0009",
+          "description": "Article de démonstration 09",
+          "category": "PACKAGING",
+          "plant": "P100",
+          "orderedQuantity": 40,
+          "receivedQuantity": 20,
+          "remainingQuantity": 20,
+          "unit": "KG",
+          "netPrice": 56,
+          "priceUnit": 1,
+          "deliveryDate": "2026-07-29",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0010",
+          "description": "Article de démonstration 10",
+          "category": "SAFETY",
+          "plant": "P200",
+          "orderedQuantity": 50,
+          "receivedQuantity": 25,
+          "remainingQuantity": 25,
+          "unit": "EA",
+          "netPrice": 59,
+          "priceUnit": 1,
+          "deliveryDate": "2026-07-29",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000021",
+      "supplierId": "SUP-001",
+      "companyCode": "1000",
+      "purchasingOrganization": "1000",
+      "purchasingGroup": "G10",
+      "orderDate": "2026-07-08",
+      "currency": "EUR",
+      "netValue": 7110,
+      "status": "PARTIAL",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0011",
+          "description": "Article de démonstration 11",
+          "category": "MECHANICAL",
+          "plant": "P100",
+          "orderedQuantity": 50,
+          "receivedQuantity": 25,
+          "remainingQuantity": 25,
+          "unit": "EA",
+          "netPrice": 63,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-22",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0012",
+          "description": "Article de démonstration 12",
+          "category": "OFFICE",
+          "plant": "P200",
+          "orderedQuantity": 60,
+          "receivedQuantity": 30,
+          "remainingQuantity": 30,
+          "unit": "EA",
+          "netPrice": 66,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-22",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000022",
+      "supplierId": "SUP-002",
+      "companyCode": "2000",
+      "purchasingOrganization": "2000",
+      "purchasingGroup": "G20",
+      "orderDate": "2026-07-09",
+      "currency": "EUR",
+      "netValue": 9310,
+      "status": "DELIVERED",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0013",
+          "description": "Article de démonstration 13",
+          "category": "TOOLS",
+          "plant": "P100",
+          "orderedQuantity": 60,
+          "receivedQuantity": 60,
+          "remainingQuantity": 0,
+          "unit": "KG",
+          "netPrice": 70,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-23",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0014",
+          "description": "Article de démonstration 14",
+          "category": "PACKAGING",
+          "plant": "P200",
+          "orderedQuantity": 70,
+          "receivedQuantity": 70,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 73,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-23",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000023",
+      "supplierId": "SUP-003",
+      "companyCode": "1000",
+      "purchasingOrganization": "1000",
+      "purchasingGroup": "G30",
+      "orderDate": "2026-07-10",
+      "currency": "EUR",
+      "netValue": 11790,
+      "status": "DELIVERED",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0015",
+          "description": "Article de démonstration 15",
+          "category": "SAFETY",
+          "plant": "P100",
+          "orderedQuantity": 70,
+          "receivedQuantity": 70,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 77,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-24",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0016",
+          "description": "Article de démonstration 16",
+          "category": "MECHANICAL",
+          "plant": "P200",
+          "orderedQuantity": 80,
+          "receivedQuantity": 80,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 80,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-24",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000024",
+      "supplierId": "SUP-004",
+      "companyCode": "2000",
+      "purchasingOrganization": "2000",
+      "purchasingGroup": "G40",
+      "orderDate": "2026-07-11",
+      "currency": "EUR",
+      "netValue": 14550,
+      "status": "DELIVERED",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0017",
+          "description": "Article de démonstration 17",
+          "category": "OFFICE",
+          "plant": "P100",
+          "orderedQuantity": 80,
+          "receivedQuantity": 80,
+          "remainingQuantity": 0,
+          "unit": "KG",
+          "netPrice": 84,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-19",
+          "confirmationStatus": "MISSING"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0018",
+          "description": "Article de démonstration 18",
+          "category": "TOOLS",
+          "plant": "P200",
+          "orderedQuantity": 90,
+          "receivedQuantity": 90,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 87,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-19",
+          "confirmationStatus": "MISSING"
+        }
+      ]
+    },
+    {
+      "id": "4500000025",
+      "supplierId": "SUP-005",
+      "companyCode": "1000",
+      "purchasingOrganization": "1000",
+      "purchasingGroup": "G10",
+      "orderDate": "2026-07-12",
+      "currency": "EUR",
+      "netValue": 17590,
+      "status": "LATE",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0019",
+          "description": "Article de démonstration 19",
+          "category": "PACKAGING",
+          "plant": "P100",
+          "orderedQuantity": 90,
+          "receivedQuantity": 45,
+          "remainingQuantity": 45,
+          "unit": "EA",
+          "netPrice": 91,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-03",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0020",
+          "description": "Article de démonstration 20",
+          "category": "SAFETY",
+          "plant": "P200",
+          "orderedQuantity": 100,
+          "receivedQuantity": 50,
+          "remainingQuantity": 50,
+          "unit": "EA",
+          "netPrice": 94,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-03",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000026",
+      "supplierId": "SUP-006",
+      "companyCode": "2000",
+      "purchasingOrganization": "2000",
+      "purchasingGroup": "G20",
+      "orderDate": "2026-07-13",
+      "currency": "EUR",
+      "netValue": 10020,
+      "status": "DELIVERED",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0021",
+          "description": "Article de démonstration 21",
+          "category": "MECHANICAL",
+          "plant": "P100",
+          "orderedQuantity": 100,
+          "receivedQuantity": 100,
+          "remainingQuantity": 0,
+          "unit": "KG",
+          "netPrice": 98,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-27",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0022",
+          "description": "Article de démonstration 22",
+          "category": "OFFICE",
+          "plant": "P200",
+          "orderedQuantity": 20,
+          "receivedQuantity": 20,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 11,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-27",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000027",
+      "supplierId": "SUP-007",
+      "companyCode": "1000",
+      "purchasingOrganization": "1000",
+      "purchasingGroup": "G30",
+      "orderDate": "2026-07-14",
+      "currency": "EUR",
+      "netValue": 840,
+      "status": "OPEN",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0023",
+          "description": "Article de démonstration 23",
+          "category": "TOOLS",
+          "plant": "P100",
+          "orderedQuantity": 20,
+          "receivedQuantity": 0,
+          "remainingQuantity": 20,
+          "unit": "EA",
+          "netPrice": 15,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-28",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0024",
+          "description": "Article de démonstration 24",
+          "category": "PACKAGING",
+          "plant": "P200",
+          "orderedQuantity": 30,
+          "receivedQuantity": 0,
+          "remainingQuantity": 30,
+          "unit": "EA",
+          "netPrice": 18,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-28",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000028",
+      "supplierId": "SUP-008",
+      "companyCode": "2000",
+      "purchasingOrganization": "2000",
+      "purchasingGroup": "G40",
+      "orderDate": "2026-07-15",
+      "currency": "EUR",
+      "netValue": 1660,
+      "status": "PARTIAL",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0025",
+          "description": "Article de démonstration 25",
+          "category": "SAFETY",
+          "plant": "P100",
+          "orderedQuantity": 30,
+          "receivedQuantity": 15,
+          "remainingQuantity": 15,
+          "unit": "KG",
+          "netPrice": 22,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-29",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0026",
+          "description": "Article de démonstration 26",
+          "category": "MECHANICAL",
+          "plant": "P200",
+          "orderedQuantity": 40,
+          "receivedQuantity": 20,
+          "remainingQuantity": 20,
+          "unit": "EA",
+          "netPrice": 25,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-29",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000029",
+      "supplierId": "SUP-009",
+      "companyCode": "1000",
+      "purchasingOrganization": "1000",
+      "purchasingGroup": "G10",
+      "orderDate": "2026-07-16",
+      "currency": "EUR",
+      "netValue": 2760,
+      "status": "DELIVERED",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0027",
+          "description": "Article de démonstration 27",
+          "category": "OFFICE",
+          "plant": "P100",
+          "orderedQuantity": 40,
+          "receivedQuantity": 40,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 29,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-30",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0028",
+          "description": "Article de démonstration 28",
+          "category": "TOOLS",
+          "plant": "P200",
+          "orderedQuantity": 50,
+          "receivedQuantity": 50,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 32,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-30",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000030",
+      "supplierId": "SUP-010",
+      "companyCode": "2000",
+      "purchasingOrganization": "2000",
+      "purchasingGroup": "G20",
+      "orderDate": "2026-07-17",
+      "currency": "EUR",
+      "netValue": 4140,
+      "status": "LATE",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0029",
+          "description": "Article de démonstration 29",
+          "category": "PACKAGING",
+          "plant": "P100",
+          "orderedQuantity": 50,
+          "receivedQuantity": 25,
+          "remainingQuantity": 25,
+          "unit": "KG",
+          "netPrice": 36,
+          "priceUnit": 1,
+          "deliveryDate": "2026-07-29",
+          "confirmationStatus": "MISSING"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0030",
+          "description": "Article de démonstration 30",
+          "category": "SAFETY",
+          "plant": "P200",
+          "orderedQuantity": 60,
+          "receivedQuantity": 30,
+          "remainingQuantity": 30,
+          "unit": "EA",
+          "netPrice": 39,
+          "priceUnit": 1,
+          "deliveryDate": "2026-07-29",
+          "confirmationStatus": "MISSING"
+        }
+      ]
+    },
+    {
+      "id": "4500000031",
+      "supplierId": "SUP-001",
+      "companyCode": "1000",
+      "purchasingOrganization": "1000",
+      "purchasingGroup": "G30",
+      "orderDate": "2026-07-18",
+      "currency": "EUR",
+      "netValue": 5800,
+      "status": "DELIVERED",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0001",
+          "description": "Article de démonstration 01",
+          "category": "MECHANICAL",
+          "plant": "P100",
+          "orderedQuantity": 60,
+          "receivedQuantity": 60,
+          "remainingQuantity": 0,
+          "unit": "KG",
+          "netPrice": 43,
+          "priceUnit": 1,
+          "deliveryDate": "2026-09-01",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0002",
+          "description": "Article de démonstration 02",
+          "category": "OFFICE",
+          "plant": "P200",
+          "orderedQuantity": 70,
+          "receivedQuantity": 70,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 46,
+          "priceUnit": 1,
+          "deliveryDate": "2026-09-01",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000032",
+      "supplierId": "SUP-002",
+      "companyCode": "2000",
+      "purchasingOrganization": "2000",
+      "purchasingGroup": "G40",
+      "orderDate": "2026-07-19",
+      "currency": "EUR",
+      "netValue": 7740,
+      "status": "DELIVERED",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0003",
+          "description": "Article de démonstration 03",
+          "category": "TOOLS",
+          "plant": "P100",
+          "orderedQuantity": 70,
+          "receivedQuantity": 70,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 50,
+          "priceUnit": 1,
+          "deliveryDate": "2026-09-02",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0004",
+          "description": "Article de démonstration 04",
+          "category": "PACKAGING",
+          "plant": "P200",
+          "orderedQuantity": 80,
+          "receivedQuantity": 80,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 53,
+          "priceUnit": 1,
+          "deliveryDate": "2026-09-02",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000033",
+      "supplierId": "SUP-003",
+      "companyCode": "1000",
+      "purchasingOrganization": "1000",
+      "purchasingGroup": "G10",
+      "orderDate": "2026-07-20",
+      "currency": "EUR",
+      "netValue": 9960,
+      "status": "DELIVERED",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0005",
+          "description": "Article de démonstration 05",
+          "category": "SAFETY",
+          "plant": "P100",
+          "orderedQuantity": 80,
+          "receivedQuantity": 80,
+          "remainingQuantity": 0,
+          "unit": "KG",
+          "netPrice": 57,
+          "priceUnit": 1,
+          "deliveryDate": "2026-09-03",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0006",
+          "description": "Article de démonstration 06",
+          "category": "MECHANICAL",
+          "plant": "P200",
+          "orderedQuantity": 90,
+          "receivedQuantity": 90,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 60,
+          "priceUnit": 1,
+          "deliveryDate": "2026-09-03",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000034",
+      "supplierId": "SUP-004",
+      "companyCode": "2000",
+      "purchasingOrganization": "2000",
+      "purchasingGroup": "G20",
+      "orderDate": "2026-07-21",
+      "currency": "EUR",
+      "netValue": 12460,
+      "status": "DELIVERED",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0007",
+          "description": "Article de démonstration 07",
+          "category": "OFFICE",
+          "plant": "P100",
+          "orderedQuantity": 90,
+          "receivedQuantity": 90,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 64,
+          "priceUnit": 1,
+          "deliveryDate": "2026-09-04",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0008",
+          "description": "Article de démonstration 08",
+          "category": "TOOLS",
+          "plant": "P200",
+          "orderedQuantity": 100,
+          "receivedQuantity": 100,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 67,
+          "priceUnit": 1,
+          "deliveryDate": "2026-09-04",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000035",
+      "supplierId": "SUP-005",
+      "companyCode": "1000",
+      "purchasingOrganization": "1000",
+      "purchasingGroup": "G30",
+      "orderDate": "2026-07-22",
+      "currency": "EUR",
+      "netValue": 8580,
+      "status": "LATE",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0009",
+          "description": "Article de démonstration 09",
+          "category": "PACKAGING",
+          "plant": "P100",
+          "orderedQuantity": 100,
+          "receivedQuantity": 50,
+          "remainingQuantity": 50,
+          "unit": "KG",
+          "netPrice": 71,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-03",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0010",
+          "description": "Article de démonstration 10",
+          "category": "SAFETY",
+          "plant": "P200",
+          "orderedQuantity": 20,
+          "receivedQuantity": 10,
+          "remainingQuantity": 10,
+          "unit": "EA",
+          "netPrice": 74,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-03",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000036",
+      "supplierId": "SUP-006",
+      "companyCode": "2000",
+      "purchasingOrganization": "2000",
+      "purchasingGroup": "G40",
+      "orderDate": "2026-07-23",
+      "currency": "EUR",
+      "netValue": 3990,
+      "status": "OPEN",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0011",
+          "description": "Article de démonstration 11",
+          "category": "MECHANICAL",
+          "plant": "P100",
+          "orderedQuantity": 20,
+          "receivedQuantity": 0,
+          "remainingQuantity": 20,
+          "unit": "EA",
+          "netPrice": 78,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-19",
+          "confirmationStatus": "MISSING"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0012",
+          "description": "Article de démonstration 12",
+          "category": "OFFICE",
+          "plant": "P200",
+          "orderedQuantity": 30,
+          "receivedQuantity": 0,
+          "remainingQuantity": 30,
+          "unit": "EA",
+          "netPrice": 81,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-19",
+          "confirmationStatus": "MISSING"
+        }
+      ]
+    },
+    {
+      "id": "4500000037",
+      "supplierId": "SUP-007",
+      "companyCode": "1000",
+      "purchasingOrganization": "1000",
+      "purchasingGroup": "G10",
+      "orderDate": "2026-07-24",
+      "currency": "EUR",
+      "netValue": 6070,
+      "status": "DELIVERED",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0013",
+          "description": "Article de démonstration 13",
+          "category": "TOOLS",
+          "plant": "P100",
+          "orderedQuantity": 30,
+          "receivedQuantity": 30,
+          "remainingQuantity": 0,
+          "unit": "KG",
+          "netPrice": 85,
+          "priceUnit": 1,
+          "deliveryDate": "2026-09-07",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0014",
+          "description": "Article de démonstration 14",
+          "category": "PACKAGING",
+          "plant": "P200",
+          "orderedQuantity": 40,
+          "receivedQuantity": 40,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 88,
+          "priceUnit": 1,
+          "deliveryDate": "2026-09-07",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000038",
+      "supplierId": "SUP-008",
+      "companyCode": "2000",
+      "purchasingOrganization": "2000",
+      "purchasingGroup": "G20",
+      "orderDate": "2026-07-25",
+      "currency": "EUR",
+      "netValue": 8430,
+      "status": "DELIVERED",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0015",
+          "description": "Article de démonstration 15",
+          "category": "SAFETY",
+          "plant": "P100",
+          "orderedQuantity": 40,
+          "receivedQuantity": 40,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 92,
+          "priceUnit": 1,
+          "deliveryDate": "2026-09-08",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0016",
+          "description": "Article de démonstration 16",
+          "category": "MECHANICAL",
+          "plant": "P200",
+          "orderedQuantity": 50,
+          "receivedQuantity": 50,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 95,
+          "priceUnit": 1,
+          "deliveryDate": "2026-09-08",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000039",
+      "supplierId": "SUP-009",
+      "companyCode": "1000",
+      "purchasingOrganization": "1000",
+      "purchasingGroup": "G30",
+      "orderDate": "2026-07-26",
+      "currency": "EUR",
+      "netValue": 5670,
+      "status": "DELIVERED",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0017",
+          "description": "Article de démonstration 17",
+          "category": "OFFICE",
+          "plant": "P100",
+          "orderedQuantity": 50,
+          "receivedQuantity": 50,
+          "remainingQuantity": 0,
+          "unit": "KG",
+          "netPrice": 99,
+          "priceUnit": 1,
+          "deliveryDate": "2026-09-09",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0018",
+          "description": "Article de démonstration 18",
+          "category": "TOOLS",
+          "plant": "P200",
+          "orderedQuantity": 60,
+          "receivedQuantity": 60,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 12,
+          "priceUnit": 1,
+          "deliveryDate": "2026-09-09",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000040",
+      "supplierId": "SUP-010",
+      "companyCode": "2000",
+      "purchasingOrganization": "2000",
+      "purchasingGroup": "G40",
+      "orderDate": "2026-07-27",
+      "currency": "EUR",
+      "netValue": 2290,
+      "status": "LATE",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0019",
+          "description": "Article de démonstration 19",
+          "category": "PACKAGING",
+          "plant": "P100",
+          "orderedQuantity": 60,
+          "receivedQuantity": 30,
+          "remainingQuantity": 30,
+          "unit": "EA",
+          "netPrice": 16,
+          "priceUnit": 1,
+          "deliveryDate": "2026-07-29",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0020",
+          "description": "Article de démonstration 20",
+          "category": "SAFETY",
+          "plant": "P200",
+          "orderedQuantity": 70,
+          "receivedQuantity": 35,
+          "remainingQuantity": 35,
+          "unit": "EA",
+          "netPrice": 19,
+          "priceUnit": 1,
+          "deliveryDate": "2026-07-29",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000041",
+      "supplierId": "SUP-001",
+      "companyCode": "1000",
+      "purchasingOrganization": "1000",
+      "purchasingGroup": "G10",
+      "orderDate": "2026-07-28",
+      "currency": "EUR",
+      "netValue": 3690,
+      "status": "DELIVERED",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0021",
+          "description": "Article de démonstration 21",
+          "category": "MECHANICAL",
+          "plant": "P100",
+          "orderedQuantity": 70,
+          "receivedQuantity": 70,
+          "remainingQuantity": 0,
+          "unit": "KG",
+          "netPrice": 23,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-22",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0022",
+          "description": "Article de démonstration 22",
+          "category": "OFFICE",
+          "plant": "P200",
+          "orderedQuantity": 80,
+          "receivedQuantity": 80,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 26,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-22",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000042",
+      "supplierId": "SUP-002",
+      "companyCode": "2000",
+      "purchasingOrganization": "2000",
+      "purchasingGroup": "G20",
+      "orderDate": "2026-07-29",
+      "currency": "EUR",
+      "netValue": 5370,
+      "status": "PARTIAL",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0023",
+          "description": "Article de démonstration 23",
+          "category": "TOOLS",
+          "plant": "P100",
+          "orderedQuantity": 80,
+          "receivedQuantity": 40,
+          "remainingQuantity": 40,
+          "unit": "EA",
+          "netPrice": 30,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-19",
+          "confirmationStatus": "MISSING"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0024",
+          "description": "Article de démonstration 24",
+          "category": "PACKAGING",
+          "plant": "P200",
+          "orderedQuantity": 90,
+          "receivedQuantity": 45,
+          "remainingQuantity": 45,
+          "unit": "EA",
+          "netPrice": 33,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-19",
+          "confirmationStatus": "MISSING"
+        }
+      ]
+    },
+    {
+      "id": "4500000043",
+      "supplierId": "SUP-003",
+      "companyCode": "1000",
+      "purchasingOrganization": "1000",
+      "purchasingGroup": "G30",
+      "orderDate": "2026-07-30",
+      "currency": "EUR",
+      "netValue": 7330,
+      "status": "DELIVERED",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0025",
+          "description": "Article de démonstration 25",
+          "category": "SAFETY",
+          "plant": "P100",
+          "orderedQuantity": 90,
+          "receivedQuantity": 90,
+          "remainingQuantity": 0,
+          "unit": "KG",
+          "netPrice": 37,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-24",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0026",
+          "description": "Article de démonstration 26",
+          "category": "MECHANICAL",
+          "plant": "P200",
+          "orderedQuantity": 100,
+          "receivedQuantity": 100,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 40,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-24",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000044",
+      "supplierId": "SUP-004",
+      "companyCode": "2000",
+      "purchasingOrganization": "2000",
+      "purchasingGroup": "G40",
+      "orderDate": "2026-07-31",
+      "currency": "EUR",
+      "netValue": 5340,
+      "status": "DELIVERED",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0027",
+          "description": "Article de démonstration 27",
+          "category": "OFFICE",
+          "plant": "P100",
+          "orderedQuantity": 100,
+          "receivedQuantity": 100,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 44,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-25",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0028",
+          "description": "Article de démonstration 28",
+          "category": "TOOLS",
+          "plant": "P200",
+          "orderedQuantity": 20,
+          "receivedQuantity": 20,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 47,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-25",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000045",
+      "supplierId": "SUP-005",
+      "companyCode": "1000",
+      "purchasingOrganization": "1000",
+      "purchasingGroup": "G10",
+      "orderDate": "2026-08-01",
+      "currency": "EUR",
+      "netValue": 2640,
+      "status": "LATE",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0029",
+          "description": "Article de démonstration 29",
+          "category": "PACKAGING",
+          "plant": "P100",
+          "orderedQuantity": 20,
+          "receivedQuantity": 0,
+          "remainingQuantity": 20,
+          "unit": "KG",
+          "netPrice": 51,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-03",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0030",
+          "description": "Article de démonstration 30",
+          "category": "SAFETY",
+          "plant": "P200",
+          "orderedQuantity": 30,
+          "receivedQuantity": 0,
+          "remainingQuantity": 30,
+          "unit": "EA",
+          "netPrice": 54,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-03",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000046",
+      "supplierId": "SUP-006",
+      "companyCode": "2000",
+      "purchasingOrganization": "2000",
+      "purchasingGroup": "G20",
+      "orderDate": "2026-08-02",
+      "currency": "EUR",
+      "netValue": 4180,
+      "status": "DELIVERED",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0001",
+          "description": "Article de démonstration 01",
+          "category": "MECHANICAL",
+          "plant": "P100",
+          "orderedQuantity": 30,
+          "receivedQuantity": 30,
+          "remainingQuantity": 0,
+          "unit": "KG",
+          "netPrice": 58,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-27",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0002",
+          "description": "Article de démonstration 02",
+          "category": "OFFICE",
+          "plant": "P200",
+          "orderedQuantity": 40,
+          "receivedQuantity": 40,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 61,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-27",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000047",
+      "supplierId": "SUP-007",
+      "companyCode": "1000",
+      "purchasingOrganization": "1000",
+      "purchasingGroup": "G30",
+      "orderDate": "2026-08-03",
+      "currency": "EUR",
+      "netValue": 6000,
+      "status": "DELIVERED",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0003",
+          "description": "Article de démonstration 03",
+          "category": "TOOLS",
+          "plant": "P100",
+          "orderedQuantity": 40,
+          "receivedQuantity": 40,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 65,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-28",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0004",
+          "description": "Article de démonstration 04",
+          "category": "PACKAGING",
+          "plant": "P200",
+          "orderedQuantity": 50,
+          "receivedQuantity": 50,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 68,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-28",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000048",
+      "supplierId": "SUP-008",
+      "companyCode": "2000",
+      "purchasingOrganization": "2000",
+      "purchasingGroup": "G40",
+      "orderDate": "2026-08-04",
+      "currency": "EUR",
+      "netValue": 8100,
+      "status": "DELIVERED",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0005",
+          "description": "Article de démonstration 05",
+          "category": "SAFETY",
+          "plant": "P100",
+          "orderedQuantity": 50,
+          "receivedQuantity": 50,
+          "remainingQuantity": 0,
+          "unit": "KG",
+          "netPrice": 72,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-19",
+          "confirmationStatus": "MISSING"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0006",
+          "description": "Article de démonstration 06",
+          "category": "MECHANICAL",
+          "plant": "P200",
+          "orderedQuantity": 60,
+          "receivedQuantity": 60,
+          "remainingQuantity": 0,
+          "unit": "EA",
+          "netPrice": 75,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-19",
+          "confirmationStatus": "MISSING"
+        }
+      ]
+    },
+    {
+      "id": "4500000049",
+      "supplierId": "SUP-009",
+      "companyCode": "1000",
+      "purchasingOrganization": "1000",
+      "purchasingGroup": "G10",
+      "orderDate": "2026-08-05",
+      "currency": "EUR",
+      "netValue": 10480,
+      "status": "PARTIAL",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0007",
+          "description": "Article de démonstration 07",
+          "category": "OFFICE",
+          "plant": "P100",
+          "orderedQuantity": 60,
+          "receivedQuantity": 30,
+          "remainingQuantity": 30,
+          "unit": "EA",
+          "netPrice": 79,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-30",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0008",
+          "description": "Article de démonstration 08",
+          "category": "TOOLS",
+          "plant": "P200",
+          "orderedQuantity": 70,
+          "receivedQuantity": 35,
+          "remainingQuantity": 35,
+          "unit": "EA",
+          "netPrice": 82,
+          "priceUnit": 1,
+          "deliveryDate": "2026-08-30",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "4500000050",
+      "supplierId": "SUP-010",
+      "companyCode": "2000",
+      "purchasingOrganization": "2000",
+      "purchasingGroup": "G20",
+      "orderDate": "2026-08-06",
+      "currency": "EUR",
+      "netValue": 13140,
+      "status": "LATE",
+      "items": [
+        {
+          "itemNo": "00010",
+          "materialId": "MAT-0009",
+          "description": "Article de démonstration 09",
+          "category": "PACKAGING",
+          "plant": "P100",
+          "orderedQuantity": 70,
+          "receivedQuantity": 35,
+          "remainingQuantity": 35,
+          "unit": "KG",
+          "netPrice": 86,
+          "priceUnit": 1,
+          "deliveryDate": "2026-07-29",
+          "confirmationStatus": "CONFIRMED"
+        },
+        {
+          "itemNo": "00020",
+          "materialId": "MAT-0010",
+          "description": "Article de démonstration 10",
+          "category": "SAFETY",
+          "plant": "P200",
+          "orderedQuantity": 80,
+          "receivedQuantity": 40,
+          "remainingQuantity": 40,
+          "unit": "EA",
+          "netPrice": 89,
+          "priceUnit": 1,
+          "deliveryDate": "2026-07-29",
+          "confirmationStatus": "CONFIRMED"
+        }
+      ]
+    }
+  ],
+  "goodsReceipts": [
+    {
+      "id": "GR-0001-00010",
+      "purchaseOrderId": "4500000001",
+      "itemNo": "00010",
+      "postingDate": "2026-08-21",
+      "quantity": 30,
+      "unit": "KG",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0001-00020",
+      "purchaseOrderId": "4500000001",
+      "itemNo": "00020",
+      "postingDate": "2026-08-21",
+      "quantity": 40,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0002-00010",
+      "purchaseOrderId": "4500000002",
+      "itemNo": "00010",
+      "postingDate": "2026-08-22",
+      "quantity": 40,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0002-00020",
+      "purchaseOrderId": "4500000002",
+      "itemNo": "00020",
+      "postingDate": "2026-08-22",
+      "quantity": 50,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0003-00010",
+      "purchaseOrderId": "4500000003",
+      "itemNo": "00010",
+      "postingDate": "2026-08-23",
+      "quantity": 50,
+      "unit": "KG",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0003-00020",
+      "purchaseOrderId": "4500000003",
+      "itemNo": "00020",
+      "postingDate": "2026-08-23",
+      "quantity": 60,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0004-00010",
+      "purchaseOrderId": "4500000004",
+      "itemNo": "00010",
+      "postingDate": "2026-08-24",
+      "quantity": 60,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0004-00020",
+      "purchaseOrderId": "4500000004",
+      "itemNo": "00020",
+      "postingDate": "2026-08-24",
+      "quantity": 70,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0005-00010",
+      "purchaseOrderId": "4500000005",
+      "itemNo": "00010",
+      "postingDate": "2026-08-03",
+      "quantity": 35,
+      "unit": "KG",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0005-00020",
+      "purchaseOrderId": "4500000005",
+      "itemNo": "00020",
+      "postingDate": "2026-08-03",
+      "quantity": 40,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0006-00010",
+      "purchaseOrderId": "4500000006",
+      "itemNo": "00010",
+      "postingDate": "2026-08-18",
+      "quantity": 80,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0006-00020",
+      "purchaseOrderId": "4500000006",
+      "itemNo": "00020",
+      "postingDate": "2026-08-18",
+      "quantity": 90,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0007-00010",
+      "purchaseOrderId": "4500000007",
+      "itemNo": "00010",
+      "postingDate": "2026-08-27",
+      "quantity": 45,
+      "unit": "KG",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0007-00020",
+      "purchaseOrderId": "4500000007",
+      "itemNo": "00020",
+      "postingDate": "2026-08-27",
+      "quantity": 50,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0008-00010",
+      "purchaseOrderId": "4500000008",
+      "itemNo": "00010",
+      "postingDate": "2026-08-28",
+      "quantity": 100,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0008-00020",
+      "purchaseOrderId": "4500000008",
+      "itemNo": "00020",
+      "postingDate": "2026-08-28",
+      "quantity": 20,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0010-00010",
+      "purchaseOrderId": "4500000010",
+      "itemNo": "00010",
+      "postingDate": "2026-07-29",
+      "quantity": 15,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0010-00020",
+      "purchaseOrderId": "4500000010",
+      "itemNo": "00020",
+      "postingDate": "2026-07-29",
+      "quantity": 20,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0011-00010",
+      "purchaseOrderId": "4500000011",
+      "itemNo": "00010",
+      "postingDate": "2026-08-31",
+      "quantity": 40,
+      "unit": "KG",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0011-00020",
+      "purchaseOrderId": "4500000011",
+      "itemNo": "00020",
+      "postingDate": "2026-08-31",
+      "quantity": 50,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0012-00010",
+      "purchaseOrderId": "4500000012",
+      "itemNo": "00010",
+      "postingDate": "2026-08-18",
+      "quantity": 50,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0012-00020",
+      "purchaseOrderId": "4500000012",
+      "itemNo": "00020",
+      "postingDate": "2026-08-18",
+      "quantity": 60,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0013-00010",
+      "purchaseOrderId": "4500000013",
+      "itemNo": "00010",
+      "postingDate": "2026-09-02",
+      "quantity": 60,
+      "unit": "KG",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0013-00020",
+      "purchaseOrderId": "4500000013",
+      "itemNo": "00020",
+      "postingDate": "2026-09-02",
+      "quantity": 70,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0014-00010",
+      "purchaseOrderId": "4500000014",
+      "itemNo": "00010",
+      "postingDate": "2026-09-03",
+      "quantity": 35,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0014-00020",
+      "purchaseOrderId": "4500000014",
+      "itemNo": "00020",
+      "postingDate": "2026-09-03",
+      "quantity": 40,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0015-00010",
+      "purchaseOrderId": "4500000015",
+      "itemNo": "00010",
+      "postingDate": "2026-08-03",
+      "quantity": 40,
+      "unit": "KG",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0015-00020",
+      "purchaseOrderId": "4500000015",
+      "itemNo": "00020",
+      "postingDate": "2026-08-03",
+      "quantity": 45,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0016-00010",
+      "purchaseOrderId": "4500000016",
+      "itemNo": "00010",
+      "postingDate": "2026-09-05",
+      "quantity": 90,
+      "unit": "KG",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0016-00020",
+      "purchaseOrderId": "4500000016",
+      "itemNo": "00020",
+      "postingDate": "2026-09-05",
+      "quantity": 100,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0017-00010",
+      "purchaseOrderId": "4500000017",
+      "itemNo": "00010",
+      "postingDate": "2026-09-06",
+      "quantity": 100,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0017-00020",
+      "purchaseOrderId": "4500000017",
+      "itemNo": "00020",
+      "postingDate": "2026-09-06",
+      "quantity": 20,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0019-00010",
+      "purchaseOrderId": "4500000019",
+      "itemNo": "00010",
+      "postingDate": "2026-09-08",
+      "quantity": 30,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0019-00020",
+      "purchaseOrderId": "4500000019",
+      "itemNo": "00020",
+      "postingDate": "2026-09-08",
+      "quantity": 40,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0020-00010",
+      "purchaseOrderId": "4500000020",
+      "itemNo": "00010",
+      "postingDate": "2026-07-29",
+      "quantity": 20,
+      "unit": "KG",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0020-00020",
+      "purchaseOrderId": "4500000020",
+      "itemNo": "00020",
+      "postingDate": "2026-07-29",
+      "quantity": 25,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0021-00010",
+      "purchaseOrderId": "4500000021",
+      "itemNo": "00010",
+      "postingDate": "2026-08-21",
+      "quantity": 25,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0021-00020",
+      "purchaseOrderId": "4500000021",
+      "itemNo": "00020",
+      "postingDate": "2026-08-21",
+      "quantity": 30,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0022-00010",
+      "purchaseOrderId": "4500000022",
+      "itemNo": "00010",
+      "postingDate": "2026-08-22",
+      "quantity": 60,
+      "unit": "KG",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0022-00020",
+      "purchaseOrderId": "4500000022",
+      "itemNo": "00020",
+      "postingDate": "2026-08-22",
+      "quantity": 70,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0023-00010",
+      "purchaseOrderId": "4500000023",
+      "itemNo": "00010",
+      "postingDate": "2026-08-23",
+      "quantity": 70,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0023-00020",
+      "purchaseOrderId": "4500000023",
+      "itemNo": "00020",
+      "postingDate": "2026-08-23",
+      "quantity": 80,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0024-00010",
+      "purchaseOrderId": "4500000024",
+      "itemNo": "00010",
+      "postingDate": "2026-08-18",
+      "quantity": 80,
+      "unit": "KG",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0024-00020",
+      "purchaseOrderId": "4500000024",
+      "itemNo": "00020",
+      "postingDate": "2026-08-18",
+      "quantity": 90,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0025-00010",
+      "purchaseOrderId": "4500000025",
+      "itemNo": "00010",
+      "postingDate": "2026-08-03",
+      "quantity": 45,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0025-00020",
+      "purchaseOrderId": "4500000025",
+      "itemNo": "00020",
+      "postingDate": "2026-08-03",
+      "quantity": 50,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0026-00010",
+      "purchaseOrderId": "4500000026",
+      "itemNo": "00010",
+      "postingDate": "2026-08-26",
+      "quantity": 100,
+      "unit": "KG",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0026-00020",
+      "purchaseOrderId": "4500000026",
+      "itemNo": "00020",
+      "postingDate": "2026-08-26",
+      "quantity": 20,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0028-00010",
+      "purchaseOrderId": "4500000028",
+      "itemNo": "00010",
+      "postingDate": "2026-08-28",
+      "quantity": 15,
+      "unit": "KG",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0028-00020",
+      "purchaseOrderId": "4500000028",
+      "itemNo": "00020",
+      "postingDate": "2026-08-28",
+      "quantity": 20,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0029-00010",
+      "purchaseOrderId": "4500000029",
+      "itemNo": "00010",
+      "postingDate": "2026-08-29",
+      "quantity": 40,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0029-00020",
+      "purchaseOrderId": "4500000029",
+      "itemNo": "00020",
+      "postingDate": "2026-08-29",
+      "quantity": 50,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0030-00010",
+      "purchaseOrderId": "4500000030",
+      "itemNo": "00010",
+      "postingDate": "2026-07-29",
+      "quantity": 25,
+      "unit": "KG",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0030-00020",
+      "purchaseOrderId": "4500000030",
+      "itemNo": "00020",
+      "postingDate": "2026-07-29",
+      "quantity": 30,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0031-00010",
+      "purchaseOrderId": "4500000031",
+      "itemNo": "00010",
+      "postingDate": "2026-08-31",
+      "quantity": 60,
+      "unit": "KG",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0031-00020",
+      "purchaseOrderId": "4500000031",
+      "itemNo": "00020",
+      "postingDate": "2026-08-31",
+      "quantity": 70,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0032-00010",
+      "purchaseOrderId": "4500000032",
+      "itemNo": "00010",
+      "postingDate": "2026-09-01",
+      "quantity": 70,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0032-00020",
+      "purchaseOrderId": "4500000032",
+      "itemNo": "00020",
+      "postingDate": "2026-09-01",
+      "quantity": 80,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0033-00010",
+      "purchaseOrderId": "4500000033",
+      "itemNo": "00010",
+      "postingDate": "2026-09-02",
+      "quantity": 80,
+      "unit": "KG",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0033-00020",
+      "purchaseOrderId": "4500000033",
+      "itemNo": "00020",
+      "postingDate": "2026-09-02",
+      "quantity": 90,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0034-00010",
+      "purchaseOrderId": "4500000034",
+      "itemNo": "00010",
+      "postingDate": "2026-09-03",
+      "quantity": 90,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0034-00020",
+      "purchaseOrderId": "4500000034",
+      "itemNo": "00020",
+      "postingDate": "2026-09-03",
+      "quantity": 100,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0035-00010",
+      "purchaseOrderId": "4500000035",
+      "itemNo": "00010",
+      "postingDate": "2026-08-03",
+      "quantity": 50,
+      "unit": "KG",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0035-00020",
+      "purchaseOrderId": "4500000035",
+      "itemNo": "00020",
+      "postingDate": "2026-08-03",
+      "quantity": 10,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0037-00010",
+      "purchaseOrderId": "4500000037",
+      "itemNo": "00010",
+      "postingDate": "2026-09-06",
+      "quantity": 30,
+      "unit": "KG",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0037-00020",
+      "purchaseOrderId": "4500000037",
+      "itemNo": "00020",
+      "postingDate": "2026-09-06",
+      "quantity": 40,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0038-00010",
+      "purchaseOrderId": "4500000038",
+      "itemNo": "00010",
+      "postingDate": "2026-09-07",
+      "quantity": 40,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0038-00020",
+      "purchaseOrderId": "4500000038",
+      "itemNo": "00020",
+      "postingDate": "2026-09-07",
+      "quantity": 50,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0039-00010",
+      "purchaseOrderId": "4500000039",
+      "itemNo": "00010",
+      "postingDate": "2026-09-08",
+      "quantity": 50,
+      "unit": "KG",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0039-00020",
+      "purchaseOrderId": "4500000039",
+      "itemNo": "00020",
+      "postingDate": "2026-09-08",
+      "quantity": 60,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0040-00010",
+      "purchaseOrderId": "4500000040",
+      "itemNo": "00010",
+      "postingDate": "2026-07-29",
+      "quantity": 30,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0040-00020",
+      "purchaseOrderId": "4500000040",
+      "itemNo": "00020",
+      "postingDate": "2026-07-29",
+      "quantity": 35,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0041-00010",
+      "purchaseOrderId": "4500000041",
+      "itemNo": "00010",
+      "postingDate": "2026-08-21",
+      "quantity": 70,
+      "unit": "KG",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0041-00020",
+      "purchaseOrderId": "4500000041",
+      "itemNo": "00020",
+      "postingDate": "2026-08-21",
+      "quantity": 80,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0042-00010",
+      "purchaseOrderId": "4500000042",
+      "itemNo": "00010",
+      "postingDate": "2026-08-18",
+      "quantity": 40,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0042-00020",
+      "purchaseOrderId": "4500000042",
+      "itemNo": "00020",
+      "postingDate": "2026-08-18",
+      "quantity": 45,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0043-00010",
+      "purchaseOrderId": "4500000043",
+      "itemNo": "00010",
+      "postingDate": "2026-08-23",
+      "quantity": 90,
+      "unit": "KG",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0043-00020",
+      "purchaseOrderId": "4500000043",
+      "itemNo": "00020",
+      "postingDate": "2026-08-23",
+      "quantity": 100,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0044-00010",
+      "purchaseOrderId": "4500000044",
+      "itemNo": "00010",
+      "postingDate": "2026-08-24",
+      "quantity": 100,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0044-00020",
+      "purchaseOrderId": "4500000044",
+      "itemNo": "00020",
+      "postingDate": "2026-08-24",
+      "quantity": 20,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0046-00010",
+      "purchaseOrderId": "4500000046",
+      "itemNo": "00010",
+      "postingDate": "2026-08-26",
+      "quantity": 30,
+      "unit": "KG",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0046-00020",
+      "purchaseOrderId": "4500000046",
+      "itemNo": "00020",
+      "postingDate": "2026-08-26",
+      "quantity": 40,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0047-00010",
+      "purchaseOrderId": "4500000047",
+      "itemNo": "00010",
+      "postingDate": "2026-08-27",
+      "quantity": 40,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0047-00020",
+      "purchaseOrderId": "4500000047",
+      "itemNo": "00020",
+      "postingDate": "2026-08-27",
+      "quantity": 50,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0048-00010",
+      "purchaseOrderId": "4500000048",
+      "itemNo": "00010",
+      "postingDate": "2026-08-18",
+      "quantity": 50,
+      "unit": "KG",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0048-00020",
+      "purchaseOrderId": "4500000048",
+      "itemNo": "00020",
+      "postingDate": "2026-08-18",
+      "quantity": 60,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0049-00010",
+      "purchaseOrderId": "4500000049",
+      "itemNo": "00010",
+      "postingDate": "2026-08-29",
+      "quantity": 30,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0049-00020",
+      "purchaseOrderId": "4500000049",
+      "itemNo": "00020",
+      "postingDate": "2026-08-29",
+      "quantity": 35,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0050-00010",
+      "purchaseOrderId": "4500000050",
+      "itemNo": "00010",
+      "postingDate": "2026-07-29",
+      "quantity": 35,
+      "unit": "KG",
+      "movementType": "101",
+      "reversed": false
+    },
+    {
+      "id": "GR-0050-00020",
+      "purchaseOrderId": "4500000050",
+      "itemNo": "00020",
+      "postingDate": "2026-07-29",
+      "quantity": 40,
+      "unit": "EA",
+      "movementType": "101",
+      "reversed": false
+    }
+  ],
+  "invoices": [
+    {
+      "id": "5100000001",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-001",
+      "companyCode": "1000",
+      "purchaseOrderId": "4500000001",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 30,
+          "unitPrice": 13
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 40,
+          "unitPrice": 16
+        }
+      ]
+    },
+    {
+      "id": "5100000002",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-002",
+      "companyCode": "2000",
+      "purchaseOrderId": "4500000002",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 40,
+          "unitPrice": 20
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 50,
+          "unitPrice": 23
+        }
+      ]
+    },
+    {
+      "id": "5100000003",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-003",
+      "companyCode": "1000",
+      "purchaseOrderId": "4500000003",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 50,
+          "unitPrice": 27
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 60,
+          "unitPrice": 30
+        }
+      ]
+    },
+    {
+      "id": "5100000004",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-004",
+      "companyCode": "2000",
+      "purchaseOrderId": "4500000004",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 60,
+          "unitPrice": 34
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 70,
+          "unitPrice": 37
+        }
+      ]
+    },
+    {
+      "id": "5100000005",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-005",
+      "companyCode": "1000",
+      "purchaseOrderId": "4500000005",
+      "invoiceDate": "2026-08-05",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 35,
+          "unitPrice": 41
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 40,
+          "unitPrice": 44
+        }
+      ]
+    },
+    {
+      "id": "5100000006",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-006",
+      "companyCode": "2000",
+      "purchaseOrderId": "4500000006",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 80,
+          "unitPrice": 48
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 90,
+          "unitPrice": 51
+        }
+      ]
+    },
+    {
+      "id": "5100000007",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-007",
+      "companyCode": "1000",
+      "purchaseOrderId": "4500000007",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 45,
+          "unitPrice": 55
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 50,
+          "unitPrice": 58
+        }
+      ]
+    },
+    {
+      "id": "5100000008",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-008",
+      "companyCode": "2000",
+      "purchaseOrderId": "4500000008",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": true,
+      "blockReasons": [
+        "PRICE"
+      ],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 100,
+          "unitPrice": 66.96
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 20,
+          "unitPrice": 70.2
+        }
+      ]
+    },
+    {
+      "id": "5100000009",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-009",
+      "companyCode": "1000",
+      "purchaseOrderId": "4500000009",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 0,
+          "unitPrice": 69
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 0,
+          "unitPrice": 72
+        }
+      ]
+    },
+    {
+      "id": "5100000010",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-010",
+      "companyCode": "2000",
+      "purchaseOrderId": "4500000010",
+      "invoiceDate": "2026-07-31",
+      "currency": "EUR",
+      "blocked": true,
+      "blockReasons": [
+        "QUANTITY"
+      ],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 18,
+          "unitPrice": 76
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 24,
+          "unitPrice": 79
+        }
+      ]
+    },
+    {
+      "id": "5100000011",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-001",
+      "companyCode": "1000",
+      "purchaseOrderId": "4500000011",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": true,
+      "blockReasons": [
+        "MANUAL"
+      ],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 40,
+          "unitPrice": 83
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 50,
+          "unitPrice": 86
+        }
+      ]
+    },
+    {
+      "id": "5100000012",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-002",
+      "companyCode": "2000",
+      "purchaseOrderId": "4500000012",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 50,
+          "unitPrice": 90
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 60,
+          "unitPrice": 93
+        }
+      ]
+    },
+    {
+      "id": "5100000013",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-003",
+      "companyCode": "1000",
+      "purchaseOrderId": "4500000013",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 60,
+          "unitPrice": 97
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 70,
+          "unitPrice": 10
+        }
+      ]
+    },
+    {
+      "id": "5100000014",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-004",
+      "companyCode": "2000",
+      "purchaseOrderId": "4500000014",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 35,
+          "unitPrice": 14
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 40,
+          "unitPrice": 17
+        }
+      ]
+    },
+    {
+      "id": "5100000015",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-005",
+      "companyCode": "1000",
+      "purchaseOrderId": "4500000015",
+      "invoiceDate": "2026-08-05",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 40,
+          "unitPrice": 21
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 45,
+          "unitPrice": 24
+        }
+      ]
+    },
+    {
+      "id": "5100000016",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-006",
+      "companyCode": "2000",
+      "purchaseOrderId": "4500000016",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": true,
+      "blockReasons": [
+        "PRICE"
+      ],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 90,
+          "unitPrice": 30.24
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 100,
+          "unitPrice": 33.48
+        }
+      ]
+    },
+    {
+      "id": "5100000017",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-007",
+      "companyCode": "1000",
+      "purchaseOrderId": "4500000017",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 100,
+          "unitPrice": 35
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 20,
+          "unitPrice": 38
+        }
+      ]
+    },
+    {
+      "id": "5100000018",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-008",
+      "companyCode": "2000",
+      "purchaseOrderId": "4500000018",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 0,
+          "unitPrice": 42
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 0,
+          "unitPrice": 45
+        }
+      ]
+    },
+    {
+      "id": "5100000019",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-009",
+      "companyCode": "1000",
+      "purchaseOrderId": "4500000019",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 30,
+          "unitPrice": 49
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 40,
+          "unitPrice": 52
+        }
+      ]
+    },
+    {
+      "id": "5100000020",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-010",
+      "companyCode": "2000",
+      "purchaseOrderId": "4500000020",
+      "invoiceDate": "2026-07-31",
+      "currency": "EUR",
+      "blocked": true,
+      "blockReasons": [
+        "QUANTITY"
+      ],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 24,
+          "unitPrice": 56
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 30,
+          "unitPrice": 59
+        }
+      ]
+    },
+    {
+      "id": "5100000021",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-001",
+      "companyCode": "1000",
+      "purchaseOrderId": "4500000021",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 25,
+          "unitPrice": 63
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 30,
+          "unitPrice": 66
+        }
+      ]
+    },
+    {
+      "id": "5100000022",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-002",
+      "companyCode": "2000",
+      "purchaseOrderId": "4500000022",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": true,
+      "blockReasons": [
+        "MANUAL"
+      ],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 60,
+          "unitPrice": 70
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 70,
+          "unitPrice": 73
+        }
+      ]
+    },
+    {
+      "id": "5100000023",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-003",
+      "companyCode": "1000",
+      "purchaseOrderId": "4500000023",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 70,
+          "unitPrice": 77
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 80,
+          "unitPrice": 80
+        }
+      ]
+    },
+    {
+      "id": "5100000024",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-004",
+      "companyCode": "2000",
+      "purchaseOrderId": "4500000024",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": true,
+      "blockReasons": [
+        "PRICE"
+      ],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 80,
+          "unitPrice": 90.72
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 90,
+          "unitPrice": 93.96
+        }
+      ]
+    },
+    {
+      "id": "5100000025",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-005",
+      "companyCode": "1000",
+      "purchaseOrderId": "4500000025",
+      "invoiceDate": "2026-08-05",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 45,
+          "unitPrice": 91
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 50,
+          "unitPrice": 94
+        }
+      ]
+    },
+    {
+      "id": "5100000026",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-006",
+      "companyCode": "2000",
+      "purchaseOrderId": "4500000026",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 100,
+          "unitPrice": 98
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 20,
+          "unitPrice": 11
+        }
+      ]
+    },
+    {
+      "id": "5100000027",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-007",
+      "companyCode": "1000",
+      "purchaseOrderId": "4500000027",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 0,
+          "unitPrice": 15
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 0,
+          "unitPrice": 18
+        }
+      ]
+    },
+    {
+      "id": "5100000028",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-008",
+      "companyCode": "2000",
+      "purchaseOrderId": "4500000028",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 15,
+          "unitPrice": 22
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 20,
+          "unitPrice": 25
+        }
+      ]
+    },
+    {
+      "id": "5100000029",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-009",
+      "companyCode": "1000",
+      "purchaseOrderId": "4500000029",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 40,
+          "unitPrice": 29
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 50,
+          "unitPrice": 32
+        }
+      ]
+    },
+    {
+      "id": "5100000030",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-010",
+      "companyCode": "2000",
+      "purchaseOrderId": "4500000030",
+      "invoiceDate": "2026-07-31",
+      "currency": "EUR",
+      "blocked": true,
+      "blockReasons": [
+        "QUANTITY"
+      ],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 30,
+          "unitPrice": 36
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 36,
+          "unitPrice": 39
+        }
+      ]
+    },
+    {
+      "id": "5100000031",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-001",
+      "companyCode": "1000",
+      "purchaseOrderId": "4500000031",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 60,
+          "unitPrice": 43
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 70,
+          "unitPrice": 46
+        }
+      ]
+    },
+    {
+      "id": "5100000032",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-002",
+      "companyCode": "2000",
+      "purchaseOrderId": "4500000032",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": true,
+      "blockReasons": [
+        "PRICE"
+      ],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 70,
+          "unitPrice": 54
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 80,
+          "unitPrice": 57.24
+        }
+      ]
+    },
+    {
+      "id": "5100000033",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-003",
+      "companyCode": "1000",
+      "purchaseOrderId": "4500000033",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": true,
+      "blockReasons": [
+        "MANUAL"
+      ],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 80,
+          "unitPrice": 57
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 90,
+          "unitPrice": 60
+        }
+      ]
+    },
+    {
+      "id": "5100000034",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-004",
+      "companyCode": "2000",
+      "purchaseOrderId": "4500000034",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 90,
+          "unitPrice": 64
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 100,
+          "unitPrice": 67
+        }
+      ]
+    },
+    {
+      "id": "5100000035",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-005",
+      "companyCode": "1000",
+      "purchaseOrderId": "4500000035",
+      "invoiceDate": "2026-08-05",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 50,
+          "unitPrice": 71
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 10,
+          "unitPrice": 74
+        }
+      ]
+    },
+    {
+      "id": "5100000036",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-006",
+      "companyCode": "2000",
+      "purchaseOrderId": "4500000036",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 0,
+          "unitPrice": 78
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 0,
+          "unitPrice": 81
+        }
+      ]
+    },
+    {
+      "id": "5100000037",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-007",
+      "companyCode": "1000",
+      "purchaseOrderId": "4500000037",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 30,
+          "unitPrice": 85
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 40,
+          "unitPrice": 88
+        }
+      ]
+    },
+    {
+      "id": "5100000038",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-008",
+      "companyCode": "2000",
+      "purchaseOrderId": "4500000038",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 40,
+          "unitPrice": 92
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 50,
+          "unitPrice": 95
+        }
+      ]
+    },
+    {
+      "id": "5100000039",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-009",
+      "companyCode": "1000",
+      "purchaseOrderId": "4500000039",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 50,
+          "unitPrice": 99
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 60,
+          "unitPrice": 12
+        }
+      ]
+    },
+    {
+      "id": "5100000040",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-010",
+      "companyCode": "2000",
+      "purchaseOrderId": "4500000040",
+      "invoiceDate": "2026-07-31",
+      "currency": "EUR",
+      "blocked": true,
+      "blockReasons": [
+        "PRICE",
+        "QUANTITY"
+      ],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 36,
+          "unitPrice": 17.28
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 42,
+          "unitPrice": 20.52
+        }
+      ]
+    },
+    {
+      "id": "5100000041",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-001",
+      "companyCode": "1000",
+      "purchaseOrderId": "4500000041",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 70,
+          "unitPrice": 23
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 80,
+          "unitPrice": 26
+        }
+      ]
+    },
+    {
+      "id": "5100000042",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-002",
+      "companyCode": "2000",
+      "purchaseOrderId": "4500000042",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 40,
+          "unitPrice": 30
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 45,
+          "unitPrice": 33
+        }
+      ]
+    },
+    {
+      "id": "5100000043",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-003",
+      "companyCode": "1000",
+      "purchaseOrderId": "4500000043",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 90,
+          "unitPrice": 37
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 100,
+          "unitPrice": 40
+        }
+      ]
+    },
+    {
+      "id": "5100000044",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-004",
+      "companyCode": "2000",
+      "purchaseOrderId": "4500000044",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": true,
+      "blockReasons": [
+        "MANUAL"
+      ],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 100,
+          "unitPrice": 44
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 20,
+          "unitPrice": 47
+        }
+      ]
+    },
+    {
+      "id": "5100000045",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-005",
+      "companyCode": "1000",
+      "purchaseOrderId": "4500000045",
+      "invoiceDate": "2026-08-05",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 0,
+          "unitPrice": 51
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 0,
+          "unitPrice": 54
+        }
+      ]
+    },
+    {
+      "id": "5100000046",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-006",
+      "companyCode": "2000",
+      "purchaseOrderId": "4500000046",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 30,
+          "unitPrice": 58
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 40,
+          "unitPrice": 61
+        }
+      ]
+    },
+    {
+      "id": "5100000047",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-007",
+      "companyCode": "1000",
+      "purchaseOrderId": "4500000047",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 40,
+          "unitPrice": 65
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 50,
+          "unitPrice": 68
+        }
+      ]
+    },
+    {
+      "id": "5100000048",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-008",
+      "companyCode": "2000",
+      "purchaseOrderId": "4500000048",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": true,
+      "blockReasons": [
+        "PRICE"
+      ],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 50,
+          "unitPrice": 77.76
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 60,
+          "unitPrice": 81
+        }
+      ]
+    },
+    {
+      "id": "5100000049",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-009",
+      "companyCode": "1000",
+      "purchaseOrderId": "4500000049",
+      "invoiceDate": "2026-08-16",
+      "currency": "EUR",
+      "blocked": false,
+      "blockReasons": [],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 30,
+          "unitPrice": 79
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 35,
+          "unitPrice": 82
+        }
+      ]
+    },
+    {
+      "id": "5100000050",
+      "fiscalYear": 2026,
+      "supplierId": "SUP-010",
+      "companyCode": "2000",
+      "purchaseOrderId": "4500000050",
+      "invoiceDate": "2026-07-31",
+      "currency": "EUR",
+      "blocked": true,
+      "blockReasons": [
+        "QUANTITY"
+      ],
+      "items": [
+        {
+          "itemNo": "00010",
+          "quantity": 42,
+          "unitPrice": 86
+        },
+        {
+          "itemNo": "00020",
+          "quantity": 48,
+          "unitPrice": 89
+        }
+      ]
+    }
+  ],
+  "quality": {
+    "suppliers": 10,
+    "materials": 30,
+    "purchaseOrders": 50,
+    "lateOrders": 10,
+    "partialOrders": 6,
+    "ordersWithoutReceipt": 5,
+    "blockedInvoices": 14,
+    "priceMismatches": 6,
+    "quantityMismatches": 5
+  }
+}

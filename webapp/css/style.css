@@ -1,0 +1,8 @@
+.cockpitContent {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.cockpitContent .sapMGT {
+  width: 14rem;
+}

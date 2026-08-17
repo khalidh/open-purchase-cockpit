@@ -1,0 +1,274 @@
+openapi: 3.1.0
+info:
+  title: Open Purchase Cockpit API
+  version: 1.0.0-mvp
+  description: API interne API-first. Les connecteurs SAP restent derrière cette frontière.
+servers:
+  - url: /api/v1
+security:
+  - oidc: [opc.read]
+paths:
+  /dashboard:
+    get:
+      operationId: getDashboard
+      tags: [Dashboard]
+      parameters:
+        - $ref: '#/components/parameters/From'
+        - $ref: '#/components/parameters/To'
+        - $ref: '#/components/parameters/CompanyCode'
+        - name: reportCurrency
+          in: query
+          schema: {type: string, pattern: '^[A-Z]{3}$', default: EUR}
+      responses:
+        '200':
+          description: KPI scopés et datés
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/DashboardResponse'}
+        default: {$ref: '#/components/responses/Problem'}
+  /purchase-orders:
+    get:
+      operationId: listPurchaseOrders
+      tags: [Purchase Orders]
+      parameters:
+        - $ref: '#/components/parameters/Query'
+        - $ref: '#/components/parameters/CompanyCode'
+        - name: status
+          in: query
+          schema: {type: string, enum: [OPEN, PARTIAL, LATE, DELIVERED, CLOSED, DELETED, UNKNOWN]}
+        - name: supplierId
+          in: query
+          schema: {type: string, maxLength: 40}
+        - $ref: '#/components/parameters/PageSize'
+        - $ref: '#/components/parameters/PageAfter'
+      responses:
+        '200':
+          description: Page de commandes
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/Page'
+                  - type: object
+                    properties:
+                      data: {type: array, items: {$ref: '#/components/schemas/PurchaseOrderSummary'}}
+        default: {$ref: '#/components/responses/Problem'}
+  /purchase-orders/{id}:
+    get:
+      operationId: getPurchaseOrder
+      tags: [Purchase Orders]
+      parameters:
+        - $ref: '#/components/parameters/Id'
+        - name: include
+          in: query
+          description: Valeurs autorisées items,deliveries,receipts,invoices,alerts
+          schema: {type: string, maxLength: 100}
+      responses:
+        '200':
+          description: Commande visible dans le périmètre
+          content: {application/json: {schema: {$ref: '#/components/schemas/PurchaseOrder'}}}
+        '404': {$ref: '#/components/responses/Problem'}
+        default: {$ref: '#/components/responses/Problem'}
+  /purchase-requisitions:
+    get:
+      operationId: listPurchaseRequisitions
+      tags: [Purchase Requisitions]
+      parameters:
+        - $ref: '#/components/parameters/Query'
+        - name: converted
+          in: query
+          schema: {type: boolean}
+        - $ref: '#/components/parameters/PageSize'
+        - $ref: '#/components/parameters/PageAfter'
+      responses:
+        '200': {description: Page de demandes, content: {application/json: {schema: {$ref: '#/components/schemas/GenericPage'}}}}
+        default: {$ref: '#/components/responses/Problem'}
+  /suppliers:
+    get:
+      operationId: listSuppliers
+      tags: [Suppliers]
+      parameters: [{$ref: '#/components/parameters/Query'}, {$ref: '#/components/parameters/PageSize'}, {$ref: '#/components/parameters/PageAfter'}]
+      responses:
+        '200': {description: Page de fournisseurs, content: {application/json: {schema: {$ref: '#/components/schemas/GenericPage'}}}}
+        default: {$ref: '#/components/responses/Problem'}
+  /suppliers/{id}/performance:
+    get:
+      operationId: getSupplierPerformance
+      tags: [Suppliers]
+      parameters: [{$ref: '#/components/parameters/Id'}, {$ref: '#/components/parameters/From'}, {$ref: '#/components/parameters/To'}]
+      responses:
+        '200': {description: Performance datée, content: {application/json: {schema: {type: object, additionalProperties: true}}}}
+        default: {$ref: '#/components/responses/Problem'}
+  /deliveries:
+    get:
+      operationId: listDeliveries
+      tags: [Deliveries]
+      parameters:
+        - name: status
+          in: query
+          schema: {type: string, enum: [UPCOMING, AT_RISK, LATE, PARTIAL, RECEIVED]}
+        - $ref: '#/components/parameters/PageSize'
+        - $ref: '#/components/parameters/PageAfter'
+      responses:
+        '200': {description: Page de livraisons, content: {application/json: {schema: {$ref: '#/components/schemas/GenericPage'}}}}
+        default: {$ref: '#/components/responses/Problem'}
+  /deliveries/late:
+    get:
+      operationId: listLateDeliveries
+      tags: [Deliveries]
+      parameters: [{$ref: '#/components/parameters/PageSize'}, {$ref: '#/components/parameters/PageAfter'}]
+      responses:
+        '200': {description: Alias des livraisons LATE, content: {application/json: {schema: {$ref: '#/components/schemas/GenericPage'}}}}
+        default: {$ref: '#/components/responses/Problem'}
+  /invoices/blocked:
+    get:
+      operationId: listBlockedInvoices
+      tags: [Invoices]
+      parameters: [{$ref: '#/components/parameters/PageSize'}, {$ref: '#/components/parameters/PageAfter'}]
+      responses:
+        '200': {description: Factures bloquées, content: {application/json: {schema: {$ref: '#/components/schemas/GenericPage'}}}}
+        default: {$ref: '#/components/responses/Problem'}
+  /spend:
+    get:
+      operationId: getSpend
+      tags: [Analytics]
+      parameters:
+        - $ref: '#/components/parameters/From'
+        - $ref: '#/components/parameters/To'
+        - name: dimensions
+          in: query
+          required: true
+          schema: {type: array, maxItems: 3, items: {type: string, enum: [supplier, material, category, companyCode, purchasingOrganization, purchasingGroup, costCenter, month]}}
+      responses:
+        '200': {description: Agrégats, content: {application/json: {schema: {$ref: '#/components/schemas/GenericPage'}}}}
+        default: {$ref: '#/components/responses/Problem'}
+  /alerts:
+    get:
+      operationId: listAlerts
+      tags: [Alerts]
+      parameters:
+        - name: status
+          in: query
+          schema: {type: string, enum: [OPEN, ACKNOWLEDGED, IN_PROGRESS, RESOLVED, DISMISSED]}
+        - $ref: '#/components/parameters/PageSize'
+        - $ref: '#/components/parameters/PageAfter'
+      responses:
+        '200': {description: Alertes, content: {application/json: {schema: {$ref: '#/components/schemas/GenericPage'}}}}
+        default: {$ref: '#/components/responses/Problem'}
+  /alerts/{id}:
+    patch:
+      operationId: updateAlert
+      tags: [Alerts]
+      security: [{oidc: [opc.alerts.write]}]
+      parameters:
+        - $ref: '#/components/parameters/Id'
+        - name: If-Match
+          in: header
+          required: true
+          schema: {type: string}
+      requestBody:
+        required: true
+        content:
+          application/merge-patch+json:
+            schema: {$ref: '#/components/schemas/AlertPatch'}
+      responses:
+        '200': {description: Alerte mise à jour, headers: {ETag: {schema: {type: string}}}, content: {application/json: {schema: {type: object}}}}
+        '412': {$ref: '#/components/responses/Problem'}
+        default: {$ref: '#/components/responses/Problem'}
+components:
+  securitySchemes:
+    oidc:
+      type: openIdConnect
+      openIdConnectUrl: https://idp.example.invalid/.well-known/openid-configuration
+  parameters:
+    Id: {name: id, in: path, required: true, schema: {type: string, minLength: 1, maxLength: 70}}
+    Query: {name: q, in: query, schema: {type: string, maxLength: 200}}
+    CompanyCode: {name: companyCode, in: query, schema: {type: string, maxLength: 4}}
+    From: {name: from, in: query, schema: {type: string, format: date}}
+    To: {name: to, in: query, schema: {type: string, format: date}}
+    PageSize: {name: 'page[size]', in: query, schema: {type: integer, minimum: 1, maximum: 200, default: 50}}
+    PageAfter: {name: 'page[after]', in: query, schema: {type: string, maxLength: 500}}
+  responses:
+    Problem:
+      description: Erreur standard
+      content:
+        application/problem+json:
+          schema: {$ref: '#/components/schemas/Problem'}
+  schemas:
+    Money:
+      type: object
+      required: [amount, currency]
+      properties:
+        amount: {type: string, pattern: '^-?[0-9]+(\.[0-9]+)?$'}
+        currency: {type: string, pattern: '^[A-Z]{3}$'}
+    Freshness:
+      type: object
+      required: [generatedAt, dataFreshness]
+      properties:
+        generatedAt: {type: string, format: date-time}
+        dataFreshness: {type: string, format: date-time}
+        nextCursor: {type: [string, 'null']}
+        hasMore: {type: boolean}
+    Page:
+      type: object
+      required: [data, meta]
+      properties:
+        data: {type: array, items: {type: object}}
+        meta: {$ref: '#/components/schemas/Freshness'}
+    GenericPage: {$ref: '#/components/schemas/Page'}
+    PurchaseOrderSummary:
+      type: object
+      required: [id, supplier, companyCode, orderDate, status, netValue]
+      properties:
+        id: {type: string}
+        supplier:
+          type: object
+          required: [id, name]
+          properties: {id: {type: string}, name: {type: string}}
+        companyCode: {type: string}
+        purchasingOrganization: {type: string}
+        purchasingGroup: {type: string}
+        orderDate: {type: string, format: date}
+        deliveryDate: {type: string, format: date}
+        netValue: {$ref: '#/components/schemas/Money'}
+        status: {type: string}
+    PurchaseOrder:
+      allOf:
+        - $ref: '#/components/schemas/PurchaseOrderSummary'
+        - type: object
+          properties:
+            items: {type: array, items: {type: object, additionalProperties: true}}
+            sourceTimestamp: {type: string, format: date-time}
+    DashboardResponse:
+      type: object
+      required: [data, meta]
+      properties:
+        data:
+          type: object
+          properties:
+            totalSpend: {$ref: '#/components/schemas/Money'}
+            openOrders: {type: integer, minimum: 0}
+            lateOrders: {type: integer, minimum: 0}
+            blockedInvoices: {type: integer, minimum: 0}
+          additionalProperties: true
+        meta: {$ref: '#/components/schemas/Freshness'}
+    AlertPatch:
+      type: object
+      minProperties: 1
+      properties:
+        status: {type: string, enum: [ACKNOWLEDGED, IN_PROGRESS, RESOLVED, DISMISSED]}
+        ownerId: {type: [string, 'null'], maxLength: 100}
+        comment: {type: string, maxLength: 2000}
+        snoozeUntil: {type: [string, 'null'], format: date-time}
+      additionalProperties: false
+    Problem:
+      type: object
+      required: [type, title, status, code, correlationId]
+      properties:
+        type: {type: string, format: uri-reference}
+        title: {type: string}
+        status: {type: integer}
+        detail: {type: string}
+        instance: {type: string}
+        code: {type: string}
+        correlationId: {type: string}

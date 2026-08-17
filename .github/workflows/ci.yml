@@ -1,0 +1,31 @@
+name: CI
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+      - name: Verify generated demo data is reproducible
+        run: |
+          cp examples/demo-data.json /tmp/demo-data.before.json
+          node examples/generate-demo-data.mjs
+          diff -u /tmp/demo-data.before.json examples/demo-data.json
+      - name: Archive UI build
+        uses: actions/upload-artifact@v4
+        with:
+          name: ui5-dist
+          path: dist/
+          if-no-files-found: error

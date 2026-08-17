@@ -1,0 +1,26 @@
+{
+  "name": "open-purchase-cockpit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cockpit achats SAPUI5",
+  "scripts": {
+    "start": "ui5 serve --open index.html",
+    "serve": "ui5 serve",
+    "build": "ui5 build --all --clean-dest",
+    "lint": "eslint webapp",
+    "test": "npm run lint && npm run test:specs",
+    "test:specs": "node scripts/validate-specs.mjs",
+    "test:unit": "ui5 serve --open test/unit/unitTests.qunit.html",
+    "test:integration": "ui5 serve --open test/integration/opaTests.qunit.html"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@ui5/cli": "^4.0.0",
+    "eslint": "^9.0.0",
+    "globals": "^15.0.0",
+    "js-yaml": "^4.3.1"
+  },
+  "engines": {
+    "node": ">=20.11.0"
+  }
+}

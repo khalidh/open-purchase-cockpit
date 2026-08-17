@@ -1,0 +1,73 @@
+<mvc:View
+  controllerName="open.purchase.cockpit.controller.Dashboard"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns:core="sap.ui.core"
+  xmlns="sap.m">
+  <Page title="{i18n>appTitle}" class="sapUiResponsiveContentPadding">
+    <content>
+      <VBox class="cockpitContent">
+        <Title text="{i18n>dashboardTitle}" level="H2" class="sapUiSmallMarginBottom" />
+
+        <HBox wrap="Wrap" class="sapUiSmallMarginBottom" renderType="Bare">
+          <GenericTile header="{i18n>totalOrders}" class="sapUiTinyMarginEnd sapUiTinyMarginBottom">
+            <TileContent>
+              <NumericContent value="{/summary/totalOrders}" icon="sap-icon://purchase-order" />
+            </TileContent>
+          </GenericTile>
+          <GenericTile header="{i18n>totalAmount}" class="sapUiTinyMarginEnd sapUiTinyMarginBottom">
+            <TileContent>
+              <NumericContent value="{/summary/totalAmount}" scale="k€" icon="sap-icon://money-bills" />
+            </TileContent>
+          </GenericTile>
+          <GenericTile header="{i18n>pendingOrders}" class="sapUiTinyMarginBottom">
+            <TileContent>
+              <NumericContent value="{/summary/pendingOrders}" valueColor="Critical" icon="sap-icon://pending" />
+            </TileContent>
+          </GenericTile>
+        </HBox>
+
+        <Table
+          id="purchaseTable"
+          items="{/orders}"
+          growing="true"
+          growingScrollToLoad="true"
+          noDataText="{i18n>noData}"
+          sticky="ColumnHeaders,HeaderToolbar">
+          <headerToolbar>
+            <OverflowToolbar>
+              <Title text="{i18n>ordersTitle}" level="H3" />
+              <ToolbarSpacer />
+              <SearchField width="16rem" search=".onSearch" liveChange=".onSearch" placeholder="{i18n>searchPlaceholder}" />
+              <Select id="statusFilter" change=".onStatusChange" selectedKey="ALL">
+                <core:Item key="ALL" text="{i18n>allStatuses}" />
+                <core:Item key="APPROVED" text="{i18n>statusApproved}" />
+                <core:Item key="PENDING" text="{i18n>statusPending}" />
+                <core:Item key="REJECTED" text="{i18n>statusRejected}" />
+              </Select>
+            </OverflowToolbar>
+          </headerToolbar>
+          <columns>
+            <Column><Text text="{i18n>orderId}" /></Column>
+            <Column><Text text="{i18n>supplier}" /></Column>
+            <Column minScreenWidth="Tablet" demandPopin="true"><Text text="{i18n>buyer}" /></Column>
+            <Column hAlign="End"><Text text="{i18n>amount}" /></Column>
+            <Column><Text text="{i18n>status}" /></Column>
+          </columns>
+          <items>
+            <ColumnListItem type="Active" press=".onOrderPress">
+              <cells>
+                <ObjectIdentifier title="{id}" text="{date}" />
+                <Text text="{supplier}" />
+                <Text text="{buyer}" />
+                <ObjectNumber number="{path: 'amount', formatter: '.formatter.amount'}" unit="{currency}" />
+                <ObjectStatus
+                  text="{path: 'status', formatter: '.formatter.statusText'}"
+                  state="{path: 'status', formatter: '.formatter.statusState'}" />
+              </cells>
+            </ColumnListItem>
+          </items>
+        </Table>
+      </VBox>
+    </content>
+  </Page>
+</mvc:View>

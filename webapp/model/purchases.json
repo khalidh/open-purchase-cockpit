@@ -1,0 +1,15 @@
+{
+  "summary": {
+    "totalOrders": 6,
+    "totalAmount": 184.7,
+    "pendingOrders": 2
+  },
+  "orders": [
+    { "id": "PO-2026-001", "date": "12/08/2026", "supplier": "TechSource Europe", "buyer": "Marie Dubois", "amount": 42500, "currency": "EUR", "status": "APPROVED" },
+    { "id": "PO-2026-002", "date": "13/08/2026", "supplier": "Bureau & Co", "buyer": "Paul Martin", "amount": 8750, "currency": "EUR", "status": "PENDING" },
+    { "id": "PO-2026-003", "date": "14/08/2026", "supplier": "Global Logistics", "buyer": "Sofia Bernard", "amount": 68300, "currency": "EUR", "status": "APPROVED" },
+    { "id": "PO-2026-004", "date": "15/08/2026", "supplier": "Green Energy SAS", "buyer": "Marie Dubois", "amount": 27150, "currency": "EUR", "status": "PENDING" },
+    { "id": "PO-2026-005", "date": "16/08/2026", "supplier": "Conseil Expert", "buyer": "Paul Martin", "amount": 14500, "currency": "EUR", "status": "REJECTED" },
+    { "id": "PO-2026-006", "date": "17/08/2026", "supplier": "TechSource Europe", "buyer": "Sofia Bernard", "amount": 23500, "currency": "EUR", "status": "APPROVED" }
+  ]
+}
