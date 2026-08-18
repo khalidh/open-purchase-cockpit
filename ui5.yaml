@@ -3,14 +3,13 @@ metadata:
   name: open.purchase.cockpit
 type: application
 framework:
-  name: SAPUI5
-  version: "1.136.1"
+  name: OpenUI5
+  version: "1.120.0"
   libraries:
     - name: sap.ui.core
     - name: sap.m
     - name: sap.f
     - name: sap.ui.layout
-    - name: themelib_sap_horizon
 server:
   settings:
     httpPort: 8080

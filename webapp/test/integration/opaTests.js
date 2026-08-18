@@ -4,11 +4,13 @@ sap.ui.define([
 ], function (opaTest) {
   "use strict";
 
-  QUnit.module("Tableau de bord");
+  QUnit.module("Cockpit de démonstration");
 
-  opaTest("affiche la liste des commandes", function (Given, When, Then) {
+  opaTest("affiche les tuiles et navigue vers les commandes", function (Given, When, Then) {
     Given.iStartMyAppInAFrame("../../../index.html");
-    Then.onTheDashboard.iShouldSeeThePurchaseTable();
+    Then.onTheDashboard.iShouldSeeTheTileDashboard();
+    When.onTheDashboard.iOpenTheOrdersTile();
+    Then.onTheDashboard.iShouldSeeThePurchaseOrders();
     Then.iTeardownMyAppFrame();
   });
 });

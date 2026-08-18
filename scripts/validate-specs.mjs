@@ -23,4 +23,18 @@ for (const [key, count] of Object.entries(expected)) {
 for (const scenario of ["lateOrders", "partialOrders", "ordersWithoutReceipt", "blockedInvoices", "priceMismatches", "quantityMismatches"]) {
   if (!(data.quality[scenario] > 0)) throw new Error(`Dataset does not cover ${scenario}`);
 }
-console.log(`Specifications valid: ${stories.length} stories; demo dataset coverage OK`);
+
+const uiData = JSON.parse(readFileSync("webapp/model/purchases.json", "utf8"));
+for (const collection of ["orders", "requisitions", "suppliers", "deliveries", "invoices", "alerts"]) {
+  if (!Array.isArray(uiData[collection]) || uiData[collection].length === 0) {
+    throw new Error(`Browser demo collection ${collection} is empty`);
+  }
+}
+const dashboardView = readFileSync("webapp/view/Dashboard.view.xml", "utf8");
+const tileTargets = dashboardView.match(/press="\.onTilePress"/g) ?? [];
+if (tileTargets.length < 8) throw new Error(`Expected at least 8 navigable dashboard tiles, got ${tileTargets.length}`);
+for (const key of ["dashboard", "orders", "requisitions", "deliveries", "suppliers", "invoices", "spend", "alerts", "assistant"]) {
+  if (!dashboardView.includes(`key="${key}"`)) throw new Error(`Browser demo is missing the ${key} workspace`);
+}
+
+console.log(`Specifications valid: ${stories.length} stories; datasets and ${tileTargets.length} dashboard tiles OK`);

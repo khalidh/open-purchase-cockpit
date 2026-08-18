@@ -1,15 +1,79 @@
 {
-  "summary": {
-    "totalOrders": 6,
-    "totalAmount": 184.7,
-    "pendingOrders": 2
+  "meta": {
+    "businessDate": "17/08/2026",
+    "freshness": "17/08/2026 09:55 UTC",
+    "sourceSystem": "MOCK-S4",
+    "reportCurrency": "EUR"
   },
+  "summary": {
+    "totalSpend": 684250,
+    "openOrders": 18,
+    "lateOrders": 7,
+    "missingConfirmations": 5,
+    "expectedDeliveries": 12,
+    "blockedInvoices": 4,
+    "openRequisitions": 9,
+    "activeAlerts": 11
+  },
+  "monthlySpend": [
+    {"month": "Mars", "amount": 78, "percent": 48},
+    {"month": "Avril", "amount": 96, "percent": 59},
+    {"month": "Mai", "amount": 112, "percent": 69},
+    {"month": "Juin", "amount": 135, "percent": 83},
+    {"month": "Juillet", "amount": 128, "percent": 79},
+    {"month": "Août", "amount": 135, "percent": 83}
+  ],
+  "categorySpend": [
+    {"name": "Composants mécaniques", "amount": 214500, "percent": 100},
+    {"name": "Outillage", "amount": 146200, "percent": 68},
+    {"name": "Emballages", "amount": 121350, "percent": 57},
+    {"name": "Sécurité", "amount": 108900, "percent": 51},
+    {"name": "Fournitures", "amount": 93300, "percent": 44}
+  ],
   "orders": [
-    { "id": "PO-2026-001", "date": "12/08/2026", "supplier": "TechSource Europe", "buyer": "Marie Dubois", "amount": 42500, "currency": "EUR", "status": "APPROVED" },
-    { "id": "PO-2026-002", "date": "13/08/2026", "supplier": "Bureau & Co", "buyer": "Paul Martin", "amount": 8750, "currency": "EUR", "status": "PENDING" },
-    { "id": "PO-2026-003", "date": "14/08/2026", "supplier": "Global Logistics", "buyer": "Sofia Bernard", "amount": 68300, "currency": "EUR", "status": "APPROVED" },
-    { "id": "PO-2026-004", "date": "15/08/2026", "supplier": "Green Energy SAS", "buyer": "Marie Dubois", "amount": 27150, "currency": "EUR", "status": "PENDING" },
-    { "id": "PO-2026-005", "date": "16/08/2026", "supplier": "Conseil Expert", "buyer": "Paul Martin", "amount": 14500, "currency": "EUR", "status": "REJECTED" },
-    { "id": "PO-2026-006", "date": "17/08/2026", "supplier": "TechSource Europe", "buyer": "Sofia Bernard", "amount": 23500, "currency": "EUR", "status": "APPROVED" }
+    {"id":"4500000042","supplier":"Fjord Bearings","companyCode":"1000","purchasingOrg":"1000","buyer":"Marie Dubois","material":"MAT-0012","description":"Roulements industriels","orderDate":"01/07/2026","deliveryDate":"30/07/2026","ordered":100,"received":40,"remaining":60,"unit":"EA","amount":12000,"currency":"EUR","status":"LATE","confirmation":"CONFIRMED","severity":"Error"},
+    {"id":"4500000043","supplier":"Alpine Components","companyCode":"1000","purchasingOrg":"1000","buyer":"Paul Martin","material":"MAT-0004","description":"Connecteurs inox","orderDate":"05/07/2026","deliveryDate":"20/08/2026","ordered":250,"received":0,"remaining":250,"unit":"EA","amount":48500,"currency":"EUR","status":"OPEN","confirmation":"MISSING","severity":"Warning"},
+    {"id":"4500000044","supplier":"Delta Packaging","companyCode":"2000","purchasingOrg":"2000","buyer":"Sofia Bernard","material":"MAT-0019","description":"Caisses renforcées","orderDate":"10/07/2026","deliveryDate":"12/08/2026","ordered":500,"received":250,"remaining":250,"unit":"EA","amount":18750,"currency":"EUR","status":"LATE","confirmation":"CONFIRMED","severity":"Error"},
+    {"id":"4500000045","supplier":"Cobalt Tools","companyCode":"1000","purchasingOrg":"1000","buyer":"Marie Dubois","material":"MAT-0008","description":"Kits de maintenance","orderDate":"15/07/2026","deliveryDate":"22/08/2026","ordered":80,"received":0,"remaining":80,"unit":"EA","amount":56800,"currency":"EUR","status":"AT_RISK","confirmation":"MISSING","severity":"Warning"},
+    {"id":"4500000046","supplier":"Europa Safety","companyCode":"1000","purchasingOrg":"1000","buyer":"Paul Martin","material":"MAT-0025","description":"Équipements de protection","orderDate":"18/07/2026","deliveryDate":"15/08/2026","ordered":120,"received":120,"remaining":0,"unit":"EA","amount":9600,"currency":"EUR","status":"DELIVERED","confirmation":"CONFIRMED","severity":"Success"},
+    {"id":"4500000047","supplier":"Gaia Electronics","companyCode":"2000","purchasingOrg":"2000","buyer":"Sofia Bernard","material":"MAT-0022","description":"Capteurs IoT","orderDate":"22/07/2026","deliveryDate":"25/08/2026","ordered":60,"received":0,"remaining":60,"unit":"EA","amount":73200,"currency":"EUR","status":"OPEN","confirmation":"CONFIRMED","severity":"Information"},
+    {"id":"4500000048","supplier":"Ion Chemicals","companyCode":"1000","purchasingOrg":"1000","buyer":"Marie Dubois","material":"MAT-0028","description":"Lubrifiant technique","orderDate":"25/07/2026","deliveryDate":"10/08/2026","ordered":300,"received":180,"remaining":120,"unit":"KG","amount":26400,"currency":"EUR","status":"LATE","confirmation":"CONFIRMED","severity":"Error"},
+    {"id":"4500000049","supplier":"Baltic Office","companyCode":"2000","purchasingOrg":"2000","buyer":"Paul Martin","material":"MAT-0002","description":"Mobilier ergonomique","orderDate":"02/08/2026","deliveryDate":"05/09/2026","ordered":25,"received":0,"remaining":25,"unit":"EA","amount":22500,"currency":"EUR","status":"OPEN","confirmation":"CONFIRMED","severity":"Information"}
+  ],
+  "requisitions": [
+    {"id":"1000000101","description":"Roulements ligne A","requester":"L. Petit","requestedDate":"25/08/2026","quantity":100,"unit":"EA","value":11500,"status":"APPROVED","converted":false},
+    {"id":"1000000102","description":"Capteurs température","requester":"C. Leroy","requestedDate":"30/08/2026","quantity":40,"unit":"EA","value":36000,"status":"PENDING","converted":false},
+    {"id":"1000000103","description":"EPI atelier","requester":"A. Moreau","requestedDate":"28/08/2026","quantity":200,"unit":"EA","value":14200,"status":"APPROVED","converted":true},
+    {"id":"1000000104","description":"Outillage calibré","requester":"L. Petit","requestedDate":"02/09/2026","quantity":18,"unit":"EA","value":21700,"status":"PENDING","converted":false},
+    {"id":"1000000105","description":"Emballages export","requester":"N. Simon","requestedDate":"05/09/2026","quantity":600,"unit":"EA","value":18900,"status":"APPROVED","converted":false}
+  ],
+  "suppliers": [
+    {"id":"SUP-001","name":"Alpine Components","country":"France","spend":142500,"openOrders":4,"lateOrders":1,"otif":94,"incidents":1,"trend":"+2,1 %","state":"Success"},
+    {"id":"SUP-003","name":"Cobalt Tools","country":"Belgique","spend":98400,"openOrders":3,"lateOrders":1,"otif":88,"incidents":2,"trend":"+4,8 %","state":"Warning"},
+    {"id":"SUP-004","name":"Delta Packaging","country":"Pays-Bas","spend":81600,"openOrders":2,"lateOrders":2,"otif":76,"incidents":4,"trend":"+7,2 %","state":"Error"},
+    {"id":"SUP-006","name":"Fjord Bearings","country":"Suède","spend":128900,"openOrders":5,"lateOrders":2,"otif":81,"incidents":3,"trend":"+5,4 %","state":"Warning"},
+    {"id":"SUP-007","name":"Gaia Electronics","country":"Italie","spend":116200,"openOrders":2,"lateOrders":0,"otif":97,"incidents":0,"trend":"-1,3 %","state":"Success"},
+    {"id":"SUP-009","name":"Ion Chemicals","country":"Autriche","spend":76400,"openOrders":2,"lateOrders":1,"otif":84,"incidents":2,"trend":"+3,0 %","state":"Warning"}
+  ],
+  "deliveries": [
+    {"poId":"4500000042","supplier":"Fjord Bearings","description":"Roulements industriels","dueDate":"30/07/2026","ordered":100,"received":40,"remaining":60,"risk":"Retard 18 jours","status":"LATE","state":"Error"},
+    {"poId":"4500000044","supplier":"Delta Packaging","description":"Caisses renforcées","dueDate":"12/08/2026","ordered":500,"received":250,"remaining":250,"risk":"Livraison partielle","status":"PARTIAL","state":"Error"},
+    {"poId":"4500000048","supplier":"Ion Chemicals","description":"Lubrifiant technique","dueDate":"10/08/2026","ordered":300,"received":180,"remaining":120,"risk":"Retard 7 jours","status":"LATE","state":"Error"},
+    {"poId":"4500000043","supplier":"Alpine Components","description":"Connecteurs inox","dueDate":"20/08/2026","ordered":250,"received":0,"remaining":250,"risk":"Confirmation absente","status":"AT_RISK","state":"Warning"},
+    {"poId":"4500000045","supplier":"Cobalt Tools","description":"Kits de maintenance","dueDate":"22/08/2026","ordered":80,"received":0,"remaining":80,"risk":"Risque fournisseur élevé","status":"AT_RISK","state":"Warning"}
+  ],
+  "invoices": [
+    {"id":"5100000081","poId":"4500000042","supplier":"Fjord Bearings","date":"05/08/2026","amount":12540,"currency":"EUR","mismatch":"Prix +4,5 %","status":"BLOCKED","state":"Error"},
+    {"id":"5100000082","poId":"4500000044","supplier":"Delta Packaging","date":"14/08/2026","amount":18750,"currency":"EUR","mismatch":"Quantité facturée > reçue","status":"BLOCKED","state":"Error"},
+    {"id":"5100000083","poId":"4500000046","supplier":"Europa Safety","date":"16/08/2026","amount":9600,"currency":"EUR","mismatch":"Aucun écart","status":"MATCHED","state":"Success"},
+    {"id":"5100000084","poId":"4500000048","supplier":"Ion Chemicals","date":"16/08/2026","amount":26400,"currency":"EUR","mismatch":"Réception incomplète","status":"BLOCKED","state":"Warning"},
+    {"id":"5100000085","poId":"4500000047","supplier":"Gaia Electronics","date":"17/08/2026","amount":73200,"currency":"EUR","mismatch":"Aucune réception","status":"BLOCKED","state":"Error"}
+  ],
+  "alerts": [
+    {"id":"ALT-001","title":"Commande 4500000042 en retard","type":"LateDeliveryAlert","entity":"4500000042","severity":"HIGH","owner":"Marie Dubois","age":"18 jours","status":"OPEN","state":"Error","evidence":"60 EA restantes, échéance 30/07/2026"},
+    {"id":"ALT-002","title":"Confirmation manquante","type":"DeliveryRiskAlert","entity":"4500000043","severity":"MEDIUM","owner":"Non assignée","age":"2 jours","status":"OPEN","state":"Warning","evidence":"Échéance dans 3 jours, confirmation requise"},
+    {"id":"ALT-003","title":"Écart de quantité facture","type":"QuantityMismatchAlert","entity":"5100000082","severity":"HIGH","owner":"Sofia Bernard","age":"3 jours","status":"IN_PROGRESS","state":"Error","evidence":"500 facturées, 250 reçues"},
+    {"id":"ALT-004","title":"Écart de prix facture","type":"PriceMismatchAlert","entity":"5100000081","severity":"MEDIUM","owner":"Paul Martin","age":"5 jours","status":"ACKNOWLEDGED","state":"Warning","evidence":"Écart +4,5 %, tolérance 3 %"},
+    {"id":"ALT-005","title":"Commande sans réception","type":"MissingReceiptAlert","entity":"4500000045","severity":"LOW","owner":"Non assignée","age":"1 jour","status":"OPEN","state":"Information","evidence":"80 EA attendues, aucune réception"}
   ]
 }

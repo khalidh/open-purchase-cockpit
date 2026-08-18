@@ -1,8 +1,77 @@
-.cockpitContent {
-  max-width: 90rem;
-  margin: 0 auto;
+:root {
+  --opc-ink: #17233c;
+  --opc-muted: #5c6f86;
+  --opc-surface: #ffffff;
+  --opc-line: #dce5ef;
+  --opc-bg: #f3f7fb;
 }
 
-.cockpitContent .sapMGT {
-  width: 14rem;
+.cockpitPage,
+.cockpitPage .sapMPageBgStandard,
+.cockpitTabs .sapMITBContainerContent,
+.cockpitTabs .sapMITBContent { background: var(--opc-bg); }
+
+.cockpitShellBar {
+  min-height: 4.4rem;
+  padding: 0 1.25rem;
+  background: linear-gradient(105deg, #102a43 0%, #164e73 55%, #087e8b 100%);
+  box-shadow: 0 0.25rem 1.2rem rgba(17, 42, 67, 0.24);
+}
+.cockpitShellBar .sapMTitle,
+.cockpitShellBar .sapMText,
+.cockpitShellBar .sapMObjStatusText,
+.cockpitShellBar .sapUiIcon { color: #fff !important; }
+.shellSubtitle { opacity: 0.78; }
+
+.cockpitTabs .sapMITBHeadContainer {
+  background: #fff;
+  border-bottom: 1px solid var(--opc-line);
+  box-shadow: 0 0.2rem 0.75rem rgba(22, 50, 79, 0.08);
+}
+.cockpitTabs .sapMITBContent { padding: 0; border-bottom: 0; }
+.cockpitContent { max-width: 96rem; margin: 0 auto; box-sizing: border-box; }
+
+.heroPanel {
+  padding: 1.35rem 1.5rem;
+  border-radius: 1rem;
+  color: #fff;
+  background: radial-gradient(circle at 85% 15%, rgba(255,255,255,.18), transparent 26%), linear-gradient(120deg, #155e75, #2563a5);
+  box-shadow: 0 .5rem 1.5rem rgba(23, 72, 112, .18);
+}
+.heroPanel .sapMTitle, .heroPanel .sapMText, .heroPanel .sapMLabel { color: #fff; }
+.heroText { max-width: 44rem; opacity: .88; }
+.sectionTitle { color: var(--opc-ink); margin: .35rem 0 .65rem; }
+
+.tileGrid { gap: .75rem; }
+.tileGrid .sapMGT { width: 11rem; min-width: 11rem; height: 10.5rem; margin: 0; border: 0; border-radius: .9rem; overflow: hidden; box-shadow: 0 .3rem 1rem rgba(18, 52, 86, .13); transition: transform .16s ease, box-shadow .16s ease; }
+.tileGrid .sapMGT:hover { transform: translateY(-3px); box-shadow: 0 .65rem 1.35rem rgba(18, 52, 86, .2); }
+.tileGrid .sapMGTHdrTxt .sapMText, .tileGrid .sapMGTSubHdrTxt, .tileGrid .sapMTileCntFtrTxt { color: #fff !important; }
+.tileGrid .sapMNCValueScr, .tileGrid .sapMNCIconImage { color: #fff !important; }
+.tileBlue .sapMGTContent { background: linear-gradient(145deg, #1769aa, #36a9e1); }
+.tileIndigo .sapMGTContent { background: linear-gradient(145deg, #3347a8, #6b77dc); }
+.tileRed .sapMGTContent { background: linear-gradient(145deg, #b4233b, #e85b67); }
+.tileOrange .sapMGTContent { background: linear-gradient(145deg, #c45b0a, #f59e36); }
+.tileTeal .sapMGTContent { background: linear-gradient(145deg, #087e8b, #35b7ad); }
+.tilePurple .sapMGTContent { background: linear-gradient(145deg, #7042a3, #a567cf); }
+.tileGreen .sapMGTContent { background: linear-gradient(145deg, #237a57, #49aa78); }
+.tilePink .sapMGTContent { background: linear-gradient(145deg, #a73577, #d868a2); }
+
+.analyticsRow { align-items: stretch; }
+.analyticsCard { flex: 1 1 29rem; min-width: 18rem; padding: 1.15rem 1.25rem; border: 1px solid var(--opc-line); border-radius: .85rem; background: var(--opc-surface); box-shadow: 0 .25rem .9rem rgba(30, 61, 91, .08); }
+.analyticsCard .sapMPI { margin-left: .75rem; }
+.cardHint { color: var(--opc-muted); margin-bottom: .4rem; }
+.miniTile { margin: 0 .75rem .75rem 0; border-radius: .75rem; box-shadow: 0 .25rem .9rem rgba(30, 61, 91, .1); }
+.cockpitContent .sapMListTbl { border-radius: .75rem; overflow: hidden; box-shadow: 0 .25rem 1rem rgba(30, 61, 91, .09); }
+.cockpitContent .sapMTB { border-radius: .75rem .75rem 0 0; }
+.assistantPanel { max-width: 72rem; }
+.assistantPanel .sapMOH { background: #fff; border-radius: .85rem; margin-bottom: 1rem; box-shadow: 0 .25rem 1rem rgba(30, 61, 91, .09); }
+.assistantInput { padding: 1rem; background: #fff; border-radius: .75rem; box-shadow: 0 .25rem 1rem rgba(30, 61, 91, .09); }
+
+@media (max-width: 600px) {
+  .cockpitShellBar { padding: 0 .45rem; }
+  .shellSubtitle { display: none; }
+  .heroPanel { padding: 1rem; }
+  .tileGrid { justify-content: center; }
+  .tileGrid .sapMGT { width: 9.6rem; min-width: 9.6rem; }
+  .analyticsCard { min-width: 0; width: 100%; margin-right: 0 !important; }
 }

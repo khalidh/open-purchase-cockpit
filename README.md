@@ -28,6 +28,28 @@ npm start
 
 L'application est alors disponible sur `http://localhost:8080/index.html`.
 
+## Démonstration navigateur
+
+La démo ne nécessite ni SAP ni base de données : elle utilise le connecteur logique `MOCK-S4` et des données fictives.
+
+```bash
+npm ci
+npm start
+```
+
+Dans le navigateur, tester notamment :
+
+1. cliquer sur les tuiles du dashboard pour ouvrir chaque module ;
+2. rechercher et filtrer les commandes, puis ouvrir une ligne ;
+3. isoler les demandes non transformées ;
+4. filtrer les livraisons en retard ou à risque ;
+5. consulter le cockpit fournisseur et le rapprochement des factures ;
+6. acquitter une alerte ;
+7. exporter l'analyse des dépenses en CSV ;
+8. essayer les questions suggérées du Procurement Copilot.
+
+Les mutations de la démo restent en mémoire et sont réinitialisées au rechargement. Aucune connexion ou écriture SAP n'est effectuée.
+
 ## Commandes
 
 ```bash

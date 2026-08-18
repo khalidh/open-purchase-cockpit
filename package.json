@@ -1,12 +1,12 @@
 {
   "name": "open-purchase-cockpit",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "description": "Cockpit achats SAPUI5",
   "scripts": {
     "start": "ui5 serve --open index.html",
     "serve": "ui5 serve",
-    "build": "ui5 build --all --clean-dest",
+    "build": "ui5 build --clean-dest",
     "lint": "eslint webapp",
     "test": "npm run lint && npm run test:specs",
     "test:specs": "node scripts/validate-specs.mjs",
