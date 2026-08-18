@@ -47,14 +47,15 @@
 .tileGrid .sapMGT:hover { transform: translateY(-3px); box-shadow: 0 .65rem 1.35rem rgba(18, 52, 86, .2); }
 .tileGrid .sapMGTHdrTxt .sapMText, .tileGrid .sapMGTSubHdrTxt, .tileGrid .sapMTileCntFtrTxt { color: #fff !important; }
 .tileGrid .sapMNCValueScr, .tileGrid .sapMNCIconImage { color: #fff !important; }
-.tileBlue .sapMGTContent { background: linear-gradient(145deg, #1769aa, #36a9e1); }
-.tileIndigo .sapMGTContent { background: linear-gradient(145deg, #3347a8, #6b77dc); }
-.tileRed .sapMGTContent { background: linear-gradient(145deg, #b4233b, #e85b67); }
-.tileOrange .sapMGTContent { background: linear-gradient(145deg, #c45b0a, #f59e36); }
-.tileTeal .sapMGTContent { background: linear-gradient(145deg, #087e8b, #35b7ad); }
-.tilePurple .sapMGTContent { background: linear-gradient(145deg, #7042a3, #a567cf); }
-.tileGreen .sapMGTContent { background: linear-gradient(145deg, #237a57, #49aa78); }
-.tilePink .sapMGTContent { background: linear-gradient(145deg, #a73577, #d868a2); }
+.tileGrid .sapMGTContent { background: transparent; }
+.tileBlue.sapMGT { background-color: #125487; background-image: linear-gradient(145deg, #125487, #1b6f9e); }
+.tileIndigo.sapMGT { background-color: #3347a8; background-image: linear-gradient(145deg, #3347a8, #4d5fbd); }
+.tileRed.sapMGT { background-color: #982037; background-image: linear-gradient(145deg, #982037, #bd3548); }
+.tileOrange.sapMGT { background-color: #914304; background-image: linear-gradient(145deg, #914304, #ad570e); }
+.tileTeal.sapMGT { background-color: #086570; background-image: linear-gradient(145deg, #086570, #087e7c); }
+.tilePurple.sapMGT { background-color: #60388c; background-image: linear-gradient(145deg, #60388c, #76469c); }
+.tileGreen.sapMGT { background-color: #1d6849; background-image: linear-gradient(145deg, #1d6849, #287c55); }
+.tilePink.sapMGT { background-color: #8a285f; background-image: linear-gradient(145deg, #8a285f, #a73577); }
 
 .analyticsRow { align-items: stretch; }
 .analyticsCard { flex: 1 1 29rem; min-width: 18rem; padding: 1.15rem 1.25rem; border: 1px solid var(--opc-line); border-radius: .85rem; background: var(--opc-surface); box-shadow: 0 .25rem .9rem rgba(30, 61, 91, .08); }

@@ -6,6 +6,15 @@ on:
 permissions:
   contents: read
 jobs:
+  pr-metadata:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Require traceability identifiers in pull request
+        env:
+          PR_BODY: ${{ github.event.pull_request.body }}
+        run: |
+          node -e 'const body=process.env.PR_BODY||""; if(!/(FR|NFR|US|BT)-[A-Z0-9-]+/.test(body)){console.error("La PR doit référencer au moins un identifiant FR/NFR/US/BT.");process.exit(1)}'
   validate:
     runs-on: ubuntu-latest
     timeout-minutes: 15
@@ -16,6 +25,8 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
+      - name: Audit production dependencies
+        run: npm audit --omit=dev --audit-level=high
       - run: npm test
       - run: npm run build
       - name: Verify generated demo data is reproducible
@@ -29,3 +40,25 @@ jobs:
           name: ui5-dist
           path: dist/
           if-no-files-found: error
+  browser-validation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    needs: validate
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e
+      - name: Archive browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: browser-validation-evidence
+          path: test-results/
+          if-no-files-found: warn
+          retention-days: 14

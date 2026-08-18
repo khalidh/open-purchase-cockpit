@@ -2,6 +2,26 @@
 
 Toutes les évolutions notables sont consignées ici selon Keep a Changelog et Semantic Versioning.
 
+## [1.2.0] — 2026-08-18
+
+### Added
+
+- `AGENTS.md` racine imposant la boucle de validation et la Definition of Done.
+- Matrice exigences→stories→tests→propriétaires et gouvernance de recette.
+- Formulaires GitHub pour écarts de validation, évolutions et anomalies KPI.
+- Tests Playwright desktop/mobile et axe-core avec archivage des preuves CI.
+- Gate de métadonnées PR et audit bloquant des dépendances de production.
+- Bouton de signalement GitHub prérempli dans l'application.
+
+### Fixed
+
+- Contraste des huit tuiles et noms accessibles des indicateurs.
+- Stabilité des sélecteurs UI et filtres hors menus overflow pour les tests automatisés.
+
+### Security
+
+- Audit runtime sans vulnérabilité; risque transitif de l'outillage UI5 documenté sous DEP-001.
+
 ## [1.1.0] — 2026-08-18
 
 ### Added

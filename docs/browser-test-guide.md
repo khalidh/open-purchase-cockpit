@@ -36,6 +36,8 @@ Ouvrir `http://localhost:8080/index.html`. Résolution recommandée : desktop 14
 - Sur mobile, les colonnes secondaires passent en pop-in et les tuiles restent cliquables.
 - Vérifier les états sans résultat en recherchant une valeur inexistante.
 
+Le contrôle axe-core exclut uniquement deux clones invisibles générés par OpenUI5 1.120 (`.sapMSelectList` et `.sapMTBHiddenElement`). Les contrôles visibles restent analysés. Ces exclusions doivent être réévaluées et idéalement supprimées lors de chaque montée de version OpenUI5.
+
 ## Limites assumées de la démo
 
 Le backend, OIDC, PostgreSQL, synchronisation SAP et moteur IA réel sont représentés par des données et actions locales. Ils disposent de contrats et spécifications dans `docs/`, mais leur implémentation production suit la roadmap. L'interface ne doit pas être utilisée avec des données réelles avant réalisation des contrôles de sécurité et connecteurs.

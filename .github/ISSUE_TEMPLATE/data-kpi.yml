@@ -1,0 +1,31 @@
+name: Écart de donnée ou KPI
+description: Signaler une incohérence de calcul, mapping, fraîcheur ou réconciliation.
+title: "[DATA] "
+labels: [data-quality, needs-triage]
+body:
+  - type: input
+    id: requirement
+    attributes: {label: KPI et exigence liés, placeholder: Commandes en retard / FR-DAS-001}
+    validations: {required: true}
+  - type: input
+    id: source
+    attributes: {label: Source fictive et fraîcheur, placeholder: MOCK-S4 / 2026-08-17T09:55Z}
+    validations: {required: true}
+  - type: textarea
+    id: expected
+    attributes: {label: Calcul attendu et exemple synthétique}
+    validations: {required: true}
+  - type: textarea
+    id: observed
+    attributes: {label: Calcul observé}
+    validations: {required: true}
+  - type: textarea
+    id: reconciliation
+    attributes: {label: Méthode de réconciliation utilisée}
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Contrôle des données
+      options:
+        - label: Les valeurs sont synthétiques et ne proviennent pas d'un système réel.
+          required: true

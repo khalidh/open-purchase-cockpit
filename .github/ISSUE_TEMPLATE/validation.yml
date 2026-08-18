@@ -1,0 +1,67 @@
+name: Écart de validation
+description: Signaler un résultat différent des critères attendus pendant une recette.
+title: "[VAL] "
+labels: [validation, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: "N'ajoutez aucune donnée SAP réelle, secret ou capture non expurgée."
+  - type: input
+    id: trace
+    attributes:
+      label: Identifiant lié
+      description: BT-xxx, US-xxx, FR-xxx ou NFR-xxx.
+      placeholder: BT-003 / US-004 / FR-PO-001
+    validations: {required: true}
+  - type: input
+    id: version
+    attributes:
+      label: Version et commit
+      placeholder: 1.1.0 / 25f58d1
+    validations: {required: true}
+  - type: dropdown
+    id: role
+    attributes:
+      label: Rôle métier
+      options: [Acheteur, Responsable achats, Approvisionneur, Contrôleur de gestion, Responsable fournisseur, Administrateur, Direction achats, Sécurité, Développeur]
+    validations: {required: true}
+  - type: input
+    id: environment
+    attributes:
+      label: Environnement, navigateur et résolution
+      placeholder: staging / Chrome 128 / 1440x900
+    validations: {required: true}
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Sévérité proposée
+      options: [BLOCKER, MAJOR, MINOR, COSMETIC]
+    validations: {required: true}
+  - type: textarea
+    id: expected
+    attributes:
+      label: Résultat attendu
+    validations: {required: true}
+  - type: textarea
+    id: observed
+    attributes:
+      label: Résultat observé
+    validations: {required: true}
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Étapes de reproduction
+      placeholder: "Given…\nWhen…\nThen…"
+    validations: {required: true}
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Preuve expurgée
+      description: Lien CI, capture fictive ou log sans secret/donnée réelle.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Contrôle des données
+      options:
+        - label: Je confirme que le signalement ne contient aucune donnée SAP réelle, PII, token ou secret.
+          required: true

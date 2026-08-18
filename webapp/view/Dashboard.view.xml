@@ -15,6 +15,7 @@
           </VBox>
           <ToolbarSpacer />
           <ObjectStatus text="{= 'Mock SAP · ' + ${/meta/freshness}}" state="Success" icon="sap-icon://connected" />
+          <Button text="{i18n>reportIssue}" icon="sap-icon://feedback" type="Transparent" tooltip="{i18n>reportIssueTooltip}" press=".onReportIssue" />
           <Button icon="sap-icon://bell" type="Transparent" tooltip="{i18n>alerts}" press=".onOpenAlerts">
             <customData><core:CustomData key="count" value="{/summary/activeAlerts}" writeToDom="true" /></customData>
           </Button>
@@ -23,7 +24,7 @@
 
         <IconTabBar id="mainTabs" class="cockpitTabs" selectedKey="dashboard" select=".onTabSelect" expandable="false" headerMode="Inline">
           <items>
-            <IconTabFilter key="dashboard" text="{i18n>dashboard}" icon="sap-icon://home">
+            <IconTabFilter id="dashboardTab" key="dashboard" text="{i18n>dashboard}" icon="sap-icon://home">
               <VBox class="cockpitContent sapUiResponsiveContentPadding">
                 <HBox justifyContent="SpaceBetween" alignItems="Center" wrap="Wrap" class="heroPanel sapUiSmallMarginBottom">
                   <VBox>
@@ -31,8 +32,8 @@
                     <Text text="{i18n>welcomeText}" class="heroText" />
                   </VBox>
                   <HBox alignItems="Center" wrap="Wrap">
-                    <Label text="{i18n>company}" class="sapUiTinyMarginEnd" />
-                    <Select selectedKey="ALL" change=".onCompanyChange">
+                    <Label id="companyLabel" text="{i18n>company}" labelFor="companySelect" class="sapUiTinyMarginEnd" />
+                    <Select id="companySelect" ariaLabelledBy="companyLabel" selectedKey="ALL" change=".onCompanyChange">
                       <core:Item key="ALL" text="{i18n>allCompanies}" />
                       <core:Item key="1000" text="1000 · France" />
                       <core:Item key="2000" text="2000 · Europe" />
@@ -84,8 +85,8 @@
                     <List items="{/monthlySpend}" showSeparators="None">
                       <CustomListItem>
                         <HBox alignItems="Center" width="100%">
-                          <Text text="{month}" width="4.5rem" />
-                          <ProgressIndicator percentValue="{percent}" displayValue="{= ${amount} + ' k€'}" state="Information" width="100%" />
+                          <Text id="dashboardMonthLabel" text="{month}" width="4.5rem" />
+                          <ProgressIndicator ariaLabelledBy="dashboardMonthLabel" percentValue="{percent}" displayValue="{= ${amount} + ' k€'}" state="Information" width="100%" />
                         </HBox>
                       </CustomListItem>
                     </List>
@@ -96,8 +97,8 @@
                     <List items="{/categorySpend}" showSeparators="None">
                       <CustomListItem>
                         <HBox alignItems="Center" width="100%">
-                          <Text text="{name}" width="11rem" wrapping="false" />
-                          <ProgressIndicator percentValue="{percent}" displayValue="{path:'amount', formatter:'.formatter.compactAmount'}" state="Success" width="100%" />
+                          <Text id="dashboardCategoryLabel" text="{name}" width="11rem" wrapping="false" />
+                          <ProgressIndicator ariaLabelledBy="dashboardCategoryLabel" percentValue="{percent}" displayValue="{path:'amount', formatter:'.formatter.compactAmount'}" state="Success" width="100%" />
                         </HBox>
                       </CustomListItem>
                     </List>
@@ -106,38 +107,40 @@
               </VBox>
             </IconTabFilter>
 
-            <IconTabFilter key="orders" text="{i18n>purchaseOrders}" icon="sap-icon://purchase-order" count="{/summary/openOrders}">
+            <IconTabFilter id="ordersTab" key="orders" text="{i18n>purchaseOrders}" icon="sap-icon://purchase-order" count="{/summary/openOrders}">
               <VBox class="cockpitContent sapUiResponsiveContentPadding">
                 <MessageStrip text="{i18n>demoDataNotice}" type="Information" showIcon="true" class="sapUiSmallMarginBottom" />
+                <OverflowToolbar class="sapUiTinyMarginBottom"><SearchField id="orderSearch" width="18rem" liveChange=".onOrderSearch" placeholder="{i18n>searchOrders}"/><ToolbarSpacer/><Select id="orderStatusFilter" selectedKey="ALL" change=".onOrderStatusChange"><core:Item key="ALL" text="{i18n>allStatuses}"/><core:Item key="OPEN" text="{i18n>statusOpen}"/><core:Item key="LATE" text="{i18n>statusLate}"/><core:Item key="AT_RISK" text="{i18n>statusAtRisk}"/><core:Item key="DELIVERED" text="{i18n>statusDelivered}"/></Select></OverflowToolbar>
                 <Table id="ordersTable" items="{/orders}" growing="true" sticky="ColumnHeaders,HeaderToolbar" noDataText="{i18n>noOrders}">
-                  <headerToolbar><OverflowToolbar><Title text="{i18n>purchaseOrders}" level="H2" /><ToolbarSpacer/><SearchField width="18rem" liveChange=".onOrderSearch" placeholder="{i18n>searchOrders}"/><Select id="orderStatusFilter" selectedKey="ALL" change=".onOrderStatusChange"><core:Item key="ALL" text="{i18n>allStatuses}"/><core:Item key="OPEN" text="{i18n>statusOpen}"/><core:Item key="LATE" text="{i18n>statusLate}"/><core:Item key="AT_RISK" text="{i18n>statusAtRisk}"/><core:Item key="DELIVERED" text="{i18n>statusDelivered}"/></Select></OverflowToolbar></headerToolbar>
+                  <headerToolbar><OverflowToolbar><Title text="{i18n>purchaseOrders}" level="H2" /></OverflowToolbar></headerToolbar>
                   <columns><Column><Text text="{i18n>orderId}"/></Column><Column><Text text="{i18n>supplier}"/></Column><Column minScreenWidth="Tablet" demandPopin="true"><Text text="{i18n>material}"/></Column><Column minScreenWidth="Tablet" demandPopin="true"><Text text="{i18n>deliveryDate}"/></Column><Column hAlign="End"><Text text="{i18n>remaining}"/></Column><Column hAlign="End"><Text text="{i18n>amount}"/></Column><Column><Text text="{i18n>status}"/></Column></columns>
                   <items><ColumnListItem type="Navigation" press=".onOrderPress"><cells><ObjectIdentifier title="{id}" text="{= ${companyCode} + ' · ' + ${buyer}}"/><Text text="{supplier}"/><ObjectIdentifier title="{material}" text="{description}"/><Text text="{deliveryDate}"/><ObjectNumber number="{remaining}" unit="{unit}" state="{= ${remaining} > 0 ? 'Warning' : 'Success'}"/><ObjectNumber number="{path:'amount', formatter:'.formatter.amount'}" unit="{currency}"/><ObjectStatus text="{path:'status', formatter:'.formatter.statusText'}" state="{severity}"/></cells></ColumnListItem></items>
                 </Table>
               </VBox>
             </IconTabFilter>
 
-            <IconTabFilter key="requisitions" text="{i18n>purchaseRequisitions}" icon="sap-icon://request" count="{/summary/openRequisitions}">
+            <IconTabFilter id="requisitionsTab" key="requisitions" text="{i18n>purchaseRequisitions}" icon="sap-icon://request" count="{/summary/openRequisitions}">
               <VBox class="cockpitContent sapUiResponsiveContentPadding">
                 <Table id="requisitionsTable" items="{/requisitions}" sticky="ColumnHeaders,HeaderToolbar">
-                  <headerToolbar><OverflowToolbar><Title text="{i18n>purchaseRequisitions}" level="H2"/><ToolbarSpacer/><SearchField width="18rem" liveChange=".onRequisitionSearch" placeholder="{i18n>searchRequisitions}"/><Switch state="false" customTextOn="{i18n>notConverted}" customTextOff="{i18n>all}" change=".onUnconvertedChange"/></OverflowToolbar></headerToolbar>
+                  <headerToolbar><OverflowToolbar><Title text="{i18n>purchaseRequisitions}" level="H2"/><ToolbarSpacer/><SearchField width="18rem" liveChange=".onRequisitionSearch" placeholder="{i18n>searchRequisitions}"/><Switch id="unconvertedSwitch" state="false" customTextOn="{i18n>notConverted}" customTextOff="{i18n>all}" change=".onUnconvertedChange"/></OverflowToolbar></headerToolbar>
                   <columns><Column><Text text="{i18n>requisition}"/></Column><Column><Text text="{i18n>description}"/></Column><Column minScreenWidth="Tablet" demandPopin="true"><Text text="{i18n>requester}"/></Column><Column><Text text="{i18n>requestedDate}"/></Column><Column hAlign="End"><Text text="{i18n>estimatedValue}"/></Column><Column><Text text="{i18n>status}"/></Column><Column><Text text="{i18n>conversion}"/></Column></columns>
                   <items><ColumnListItem type="Active" press=".onGenericItemPress"><cells><ObjectIdentifier title="{id}"/><Text text="{description}"/><Text text="{requester}"/><Text text="{requestedDate}"/><ObjectNumber number="{path:'value', formatter:'.formatter.amount'}" unit="EUR"/><ObjectStatus text="{path:'status', formatter:'.formatter.statusText'}" state="{path:'status', formatter:'.formatter.statusState'}"/><ObjectStatus text="{= ${converted} ? ${i18n>converted} : ${i18n>notConverted}}" state="{= ${converted} ? 'Success' : 'Warning'}"/></cells></ColumnListItem></items>
                 </Table>
               </VBox>
             </IconTabFilter>
 
-            <IconTabFilter key="deliveries" text="{i18n>deliveries}" icon="sap-icon://shipping-status" count="{/summary/lateOrders}">
+            <IconTabFilter id="deliveriesTab" key="deliveries" text="{i18n>deliveries}" icon="sap-icon://shipping-status" count="{/summary/lateOrders}">
               <VBox class="cockpitContent sapUiResponsiveContentPadding">
+                <SegmentedButton id="deliveryStatusFilter" selectedKey="ALL" selectionChange=".onDeliveryStatusChange" class="sapUiTinyMarginBottom"><items><SegmentedButtonItem key="ALL" text="{i18n>all}"/><SegmentedButtonItem key="LATE" text="{i18n>late}"/><SegmentedButtonItem id="atRiskDeliveryFilter" key="AT_RISK" text="{i18n>atRisk}"/></items></SegmentedButton>
                 <Table id="deliveriesTable" items="{/deliveries}" sticky="ColumnHeaders,HeaderToolbar">
-                  <headerToolbar><OverflowToolbar><Title text="{i18n>deliveryMonitoring}" level="H2"/><ToolbarSpacer/><SegmentedButton selectedKey="ALL" selectionChange=".onDeliveryStatusChange"><items><SegmentedButtonItem key="ALL" text="{i18n>all}"/><SegmentedButtonItem key="LATE" text="{i18n>late}"/><SegmentedButtonItem key="AT_RISK" text="{i18n>atRisk}"/></items></SegmentedButton></OverflowToolbar></headerToolbar>
+                  <headerToolbar><OverflowToolbar><Title text="{i18n>deliveryMonitoring}" level="H2"/></OverflowToolbar></headerToolbar>
                   <columns><Column><Text text="{i18n>orderId}"/></Column><Column><Text text="{i18n>supplier}"/></Column><Column minScreenWidth="Tablet" demandPopin="true"><Text text="{i18n>description}"/></Column><Column><Text text="{i18n>dueDate}"/></Column><Column hAlign="End"><Text text="{i18n>ordered}"/></Column><Column hAlign="End"><Text text="{i18n>received}"/></Column><Column hAlign="End"><Text text="{i18n>remaining}"/></Column><Column><Text text="{i18n>risk}"/></Column></columns>
                   <items><ColumnListItem type="Navigation" press=".onDeliveryPress" highlight="{state}"><cells><ObjectIdentifier title="{poId}"/><Text text="{supplier}"/><Text text="{description}"/><Text text="{dueDate}"/><ObjectNumber number="{ordered}"/><ObjectNumber number="{received}"/><ObjectNumber number="{remaining}" state="{state}"/><ObjectStatus text="{risk}" state="{state}"/></cells></ColumnListItem></items>
                 </Table>
               </VBox>
             </IconTabFilter>
 
-            <IconTabFilter key="suppliers" text="{i18n>suppliers}" icon="sap-icon://supplier">
+            <IconTabFilter id="suppliersTab" key="suppliers" text="{i18n>suppliers}" icon="sap-icon://supplier">
               <VBox class="cockpitContent sapUiResponsiveContentPadding">
                 <Table id="suppliersTable" items="{/suppliers}" sticky="ColumnHeaders,HeaderToolbar">
                   <headerToolbar><OverflowToolbar><Title text="{i18n>supplierCockpit}" level="H2"/><ToolbarSpacer/><SearchField width="18rem" liveChange=".onSupplierSearch" placeholder="{i18n>searchSuppliers}"/></OverflowToolbar></headerToolbar>
@@ -147,7 +150,7 @@
               </VBox>
             </IconTabFilter>
 
-            <IconTabFilter key="invoices" text="{i18n>invoices}" icon="sap-icon://receipt" count="{/summary/blockedInvoices}">
+            <IconTabFilter id="invoicesTab" key="invoices" text="{i18n>invoices}" icon="sap-icon://receipt" count="{/summary/blockedInvoices}">
               <VBox class="cockpitContent sapUiResponsiveContentPadding">
                 <Table id="invoicesTable" items="{/invoices}" sticky="ColumnHeaders,HeaderToolbar">
                   <headerToolbar><OverflowToolbar><Title text="{i18n>invoiceMonitoring}" level="H2"/><ToolbarSpacer/><Button text="{i18n>blockedOnly}" icon="sap-icon://filter" type="Emphasized" press=".onBlockedInvoices"/></OverflowToolbar></headerToolbar>
@@ -157,15 +160,15 @@
               </VBox>
             </IconTabFilter>
 
-            <IconTabFilter key="spend" text="{i18n>spendAnalytics}" icon="sap-icon://business-objects-experience">
+            <IconTabFilter id="spendTab" key="spend" text="{i18n>spendAnalytics}" icon="sap-icon://business-objects-experience">
               <VBox class="cockpitContent sapUiResponsiveContentPadding">
                 <HBox wrap="Wrap" class="sapUiSmallMarginBottom"><GenericTile header="{i18n>totalSpend}" subheader="EUR" class="miniTile"><TileContent><NumericContent value="684,3" scale="k" valueColor="Good"/></TileContent></GenericTile><GenericTile header="{i18n>topSupplier}" subheader="Alpine Components" class="miniTile"><TileContent><NumericContent value="142,5" scale="k€"/></TileContent></GenericTile><GenericTile header="{i18n>supplierConcentration}" subheader="Top 3" class="miniTile"><TileContent><NumericContent value="54" scale="%" valueColor="Critical"/></TileContent></GenericTile></HBox>
-                <HBox wrap="Wrap" renderType="Bare" class="analyticsRow"><VBox class="analyticsCard sapUiSmallMarginEnd sapUiSmallMarginBottom"><Title text="{i18n>monthlySpend}" level="H3"/><List items="{/monthlySpend}" showSeparators="None"><CustomListItem><HBox alignItems="Center" width="100%"><Text text="{month}" width="4.5rem"/><ProgressIndicator percentValue="{percent}" displayValue="{= ${amount} + ' k€'}" state="Information" width="100%"/></HBox></CustomListItem></List></VBox><VBox class="analyticsCard sapUiSmallMarginBottom"><Title text="{i18n>spendByCategory}" level="H3"/><List items="{/categorySpend}" showSeparators="None"><CustomListItem><HBox alignItems="Center" width="100%"><Text text="{name}" width="11rem"/><ProgressIndicator percentValue="{percent}" displayValue="{path:'amount', formatter:'.formatter.compactAmount'}" state="Success" width="100%"/></HBox></CustomListItem></List></VBox></HBox>
+                <HBox wrap="Wrap" renderType="Bare" class="analyticsRow"><VBox class="analyticsCard sapUiSmallMarginEnd sapUiSmallMarginBottom"><Title text="{i18n>monthlySpend}" level="H3"/><List items="{/monthlySpend}" showSeparators="None"><CustomListItem><HBox alignItems="Center" width="100%"><Text id="spendMonthLabel" text="{month}" width="4.5rem"/><ProgressIndicator ariaLabelledBy="spendMonthLabel" percentValue="{percent}" displayValue="{= ${amount} + ' k€'}" state="Information" width="100%"/></HBox></CustomListItem></List></VBox><VBox class="analyticsCard sapUiSmallMarginBottom"><Title text="{i18n>spendByCategory}" level="H3"/><List items="{/categorySpend}" showSeparators="None"><CustomListItem><HBox alignItems="Center" width="100%"><Text id="spendCategoryLabel" text="{name}" width="11rem"/><ProgressIndicator ariaLabelledBy="spendCategoryLabel" percentValue="{percent}" displayValue="{path:'amount', formatter:'.formatter.compactAmount'}" state="Success" width="100%"/></HBox></CustomListItem></List></VBox></HBox>
                 <Button text="{i18n>exportAnalysis}" icon="sap-icon://excel-attachment" type="Emphasized" press=".onExport"/>
               </VBox>
             </IconTabFilter>
 
-            <IconTabFilter key="alerts" text="{i18n>alerts}" icon="sap-icon://bell" count="{/summary/activeAlerts}">
+            <IconTabFilter id="alertsTab" key="alerts" text="{i18n>alerts}" icon="sap-icon://bell" count="{/summary/activeAlerts}">
               <VBox class="cockpitContent sapUiResponsiveContentPadding">
                 <Table id="alertsTable" items="{/alerts}" sticky="ColumnHeaders,HeaderToolbar">
                   <headerToolbar><OverflowToolbar><Title text="{i18n>alertCenter}" level="H2"/><ToolbarSpacer/><ObjectStatus text="{i18n>ruleEngineActive}" state="Success" icon="sap-icon://sys-enter-2"/></OverflowToolbar></headerToolbar>
@@ -175,7 +178,7 @@
               </VBox>
             </IconTabFilter>
 
-            <IconTabFilter key="assistant" text="{i18n>aiAssistant}" icon="sap-icon://da">
+            <IconTabFilter id="assistantTab" key="assistant" text="{i18n>aiAssistant}" icon="sap-icon://da">
               <VBox class="cockpitContent sapUiResponsiveContentPadding assistantPanel">
                 <ObjectHeader title="{i18n>copilotTitle}" intro="{i18n>copilotIntro}" icon="sap-icon://da" responsive="true">
                   <statuses><ObjectStatus text="{i18n>readOnly}" state="Information" icon="sap-icon://locked"/><ObjectStatus text="{i18n>groundedDemo}" state="Success"/></statuses>

@@ -50,6 +50,20 @@ Dans le navigateur, tester notamment :
 
 Les mutations de la démo restent en mémoire et sont réinitialisées au rechargement. Aucune connexion ou écriture SAP n'est effectuée.
 
+## Boucle de validation
+
+Les règles obligatoires pour agents et contributeurs sont dans `AGENTS.md`. Avant une contribution :
+
+```bash
+npm ci
+npm test
+npm run build
+npx playwright install chromium
+npm run test:e2e
+```
+
+La matrice de traçabilité, les modèles de rapport et la décision de release se trouvent dans `docs/validation/`. Le bouton « Signaler » de l'application ouvre une issue GitHub préremplie sans joindre automatiquement de donnée affichée.
+
 ## Commandes
 
 ```bash

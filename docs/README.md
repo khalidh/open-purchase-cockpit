@@ -18,6 +18,8 @@ Ce dossier constitue la référence produit et technique du projet. En cas de di
 | [quality-and-testing.md](quality-and-testing.md) | NFR, stratégie de tests et Definition of Done |
 | [browser-test-guide.md](browser-test-guide.md) | Parcours de recette de la démonstration UI5 dans un navigateur |
 | [sdlc-execution.md](sdlc-execution.md) | Passage concret des étapes SDLC pour la version de démonstration |
+| [traceability-matrix.md](traceability-matrix.md) | Liens exigences, stories, tests et propriétaires métier |
+| [validation/README.md](validation/README.md) | Gouvernance, preuves, rapports et décision de release |
 | [roadmap.md](roadmap.md) | MVP, versions, jalons et critères de sortie |
 | [repository-structure.md](repository-structure.md) | Structure GitHub, licence et gouvernance |
 | [data/demo-dataset.md](data/demo-dataset.md) | Contrat et couverture des données fictives |

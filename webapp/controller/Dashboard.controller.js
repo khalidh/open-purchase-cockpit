@@ -43,6 +43,24 @@ sap.ui.define([
       MessageToast.show(this._text("refreshSuccess"));
     },
 
+    onReportIssue: function () {
+      const sTitle = encodeURIComponent("[Validation] Décrire l'écart observé");
+      const sBody = encodeURIComponent([
+        "## Contexte de validation",
+        "- Version : 1.2.0",
+        "- Source : MOCK-S4",
+        "- Écran : à compléter",
+        "- BT/US/FR lié : à compléter",
+        "",
+        "## Résultat attendu",
+        "",
+        "## Résultat observé",
+        "",
+        "Aucune donnée SAP réelle ne doit être jointe."
+      ].join("\n"));
+      window.open(`https://github.com/khalidh/open-purchase-cockpit/issues/new?title=${sTitle}&body=${sBody}`, "_blank", "noopener,noreferrer");
+    },
+
     onCompanyChange: function (oEvent) {
       const sKey = oEvent.getParameter("selectedItem").getKey();
       const oFilter = sKey === "ALL" ? [] : [new Filter("companyCode", FilterOperator.EQ, sKey)];

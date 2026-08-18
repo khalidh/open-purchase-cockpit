@@ -1,0 +1,36 @@
+name: Évolution produit
+description: Proposer une évolution traçable du cockpit.
+title: "[FEATURE] "
+labels: [enhancement, needs-discovery]
+body:
+  - type: input
+    id: persona
+    attributes: {label: Persona concerné, placeholder: Acheteur}
+    validations: {required: true}
+  - type: textarea
+    id: problem
+    attributes: {label: Problème métier à résoudre}
+    validations: {required: true}
+  - type: textarea
+    id: outcome
+    attributes: {label: Résultat mesurable attendu}
+    validations: {required: true}
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Critères Given/When/Then
+      placeholder: "Given…\nWhen…\nThen…"
+    validations: {required: true}
+  - type: dropdown
+    id: sapImpact
+    attributes:
+      label: Impact SAP pressenti
+      options: [Aucun, API/CDS à vérifier, Connecteur existant, Règle métier, Inconnu]
+    validations: {required: true}
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Contrôle des données
+      options:
+        - label: Cette demande ne contient aucune donnée SAP réelle ou information sensible.
+          required: true
