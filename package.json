@@ -17,12 +17,12 @@
     "test:integration": "ui5 serve --open test/integration/opaTests.qunit.html"
   },
   "devDependencies": {
-    "@axe-core/playwright": "^4.13.0",
-    "@eslint/js": "^9.0.0",
-    "@playwright/test": "^1.62.1",
-    "@ui5/cli": "^4.0.0",
-    "eslint": "^9.0.0",
-    "globals": "^15.0.0",
+    "@axe-core/playwright": "^4.14.0",
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.64.1",
+    "@ui5/cli": "^4.0.71",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0",
     "js-yaml": "^4.3.1"
   },
   "engines": {
